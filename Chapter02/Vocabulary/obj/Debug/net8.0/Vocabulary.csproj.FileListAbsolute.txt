@@ -1,0 +1,15 @@
+C:\Users\nramsey-az\Desktop\cs12dotnet8\Chapter02\Vocabulary\obj\Debug\net8.0\Vocabulary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nramsey-az\Desktop\cs12dotnet8\Chapter02\Vocabulary\obj\Debug\net8.0\Vocabulary.AssemblyInfoInputs.cache
+C:\Users\nramsey-az\Desktop\cs12dotnet8\Chapter02\Vocabulary\obj\Debug\net8.0\Vocabulary.AssemblyInfo.cs
+C:\Users\nramsey-az\Desktop\cs12dotnet8\Chapter02\Vocabulary\obj\Debug\net8.0\Vocabulary.csproj.CoreCompileInputs.cache
+C:\Users\nramsey-az\Desktop\cs12dotnet8\Chapter02\Vocabulary\obj\Debug\net8.0\Vocabulary.sourcelink.json
+C:\Users\nramsey-az\Desktop\cs12dotnet8\Chapter02\Vocabulary\bin\Debug\net8.0\Vocabulary.exe
+C:\Users\nramsey-az\Desktop\cs12dotnet8\Chapter02\Vocabulary\bin\Debug\net8.0\Vocabulary.deps.json
+C:\Users\nramsey-az\Desktop\cs12dotnet8\Chapter02\Vocabulary\bin\Debug\net8.0\Vocabulary.runtimeconfig.json
+C:\Users\nramsey-az\Desktop\cs12dotnet8\Chapter02\Vocabulary\bin\Debug\net8.0\Vocabulary.dll
+C:\Users\nramsey-az\Desktop\cs12dotnet8\Chapter02\Vocabulary\bin\Debug\net8.0\Vocabulary.pdb
+C:\Users\nramsey-az\Desktop\cs12dotnet8\Chapter02\Vocabulary\obj\Debug\net8.0\Vocabulary.dll
+C:\Users\nramsey-az\Desktop\cs12dotnet8\Chapter02\Vocabulary\obj\Debug\net8.0\refint\Vocabulary.dll
+C:\Users\nramsey-az\Desktop\cs12dotnet8\Chapter02\Vocabulary\obj\Debug\net8.0\Vocabulary.pdb
+C:\Users\nramsey-az\Desktop\cs12dotnet8\Chapter02\Vocabulary\obj\Debug\net8.0\Vocabulary.genruntimeconfig.cache
+C:\Users\nramsey-az\Desktop\cs12dotnet8\Chapter02\Vocabulary\obj\Debug\net8.0\ref\Vocabulary.dll

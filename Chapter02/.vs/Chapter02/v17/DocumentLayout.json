@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter02\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D9F9D09A-847B-4DFF-A050-124FC7B6EF4B}|Numbers\\Numbers.csproj|c:\\users\\nramsey-az\\desktop\\cs12dotnet8\\chapter02\\numbers\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9F9D09A-847B-4DFF-A050-124FC7B6EF4B}|Numbers\\Numbers.csproj|solutionrelative:numbers\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9F9D09A-847B-4DFF-A050-124FC7B6EF4B}|Numbers\\Numbers.csproj|c:\\users\\nramsey-az\\desktop\\cs12dotnet8\\chapter02\\numbers\\numbers.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D9F9D09A-847B-4DFF-A050-124FC7B6EF4B}|Numbers\\Numbers.csproj|solutionrelative:numbers\\numbers.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83659B63-BA86-4157-B68F-A523CDF8C0FA}|Vocabulary\\Vocabulary.csproj|c:\\users\\nramsey-az\\desktop\\cs12dotnet8\\chapter02\\vocabulary\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83659B63-BA86-4157-B68F-A523CDF8C0FA}|Vocabulary\\Vocabulary.csproj|solutionrelative:vocabulary\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter02\\Vocabulary\\obj\\Debug\\net8.0\\Vocabulary.GlobalUsings.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Vocabulary\\obj\\Debug\\net8.0\\Vocabulary.GlobalUsings.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Numbers",
+              "DocumentMoniker": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter02\\Numbers\\Numbers.csproj",
+              "RelativeDocumentMoniker": "Numbers\\Numbers.csproj",
+              "ToolTip": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter02\\Numbers\\Numbers.csproj",
+              "RelativeToolTip": "Numbers\\Numbers.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-05T22:57:48.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter02\\Numbers\\Program.cs",
+              "RelativeDocumentMoniker": "Numbers\\Program.cs",
+              "ToolTip": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter02\\Numbers\\Program.cs",
+              "RelativeToolTip": "Numbers\\Program.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAiwDcAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T22:43:21.56Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Vocabulary.GlobalUsings.g.cs",
+              "DocumentMoniker": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter02\\Vocabulary\\obj\\Debug\\net8.0\\Vocabulary.GlobalUsings.g.cs",
+              "RelativeDocumentMoniker": "Vocabulary\\obj\\Debug\\net8.0\\Vocabulary.GlobalUsings.g.cs",
+              "ToolTip": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter02\\Vocabulary\\obj\\Debug\\net8.0\\Vocabulary.GlobalUsings.g.cs",
+              "RelativeToolTip": "Vocabulary\\obj\\Debug\\net8.0\\Vocabulary.GlobalUsings.g.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T16:52:05.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter02\\Vocabulary\\Program.cs",
+              "RelativeDocumentMoniker": "Vocabulary\\Program.cs",
+              "ToolTip": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter02\\Vocabulary\\Program.cs",
+              "RelativeToolTip": "Vocabulary\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T15:48:35.612Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
