@@ -1,0 +1,15 @@
+C:\Users\nramsey-az\Desktop\cs12dotnet8\Chapter02\Formatting\bin\Debug\net8.0\Formatting.exe
+C:\Users\nramsey-az\Desktop\cs12dotnet8\Chapter02\Formatting\bin\Debug\net8.0\Formatting.deps.json
+C:\Users\nramsey-az\Desktop\cs12dotnet8\Chapter02\Formatting\bin\Debug\net8.0\Formatting.runtimeconfig.json
+C:\Users\nramsey-az\Desktop\cs12dotnet8\Chapter02\Formatting\bin\Debug\net8.0\Formatting.dll
+C:\Users\nramsey-az\Desktop\cs12dotnet8\Chapter02\Formatting\bin\Debug\net8.0\Formatting.pdb
+C:\Users\nramsey-az\Desktop\cs12dotnet8\Chapter02\Formatting\obj\Debug\net8.0\Formatting.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nramsey-az\Desktop\cs12dotnet8\Chapter02\Formatting\obj\Debug\net8.0\Formatting.AssemblyInfoInputs.cache
+C:\Users\nramsey-az\Desktop\cs12dotnet8\Chapter02\Formatting\obj\Debug\net8.0\Formatting.AssemblyInfo.cs
+C:\Users\nramsey-az\Desktop\cs12dotnet8\Chapter02\Formatting\obj\Debug\net8.0\Formatting.csproj.CoreCompileInputs.cache
+C:\Users\nramsey-az\Desktop\cs12dotnet8\Chapter02\Formatting\obj\Debug\net8.0\Formatting.sourcelink.json
+C:\Users\nramsey-az\Desktop\cs12dotnet8\Chapter02\Formatting\obj\Debug\net8.0\Formatting.dll
+C:\Users\nramsey-az\Desktop\cs12dotnet8\Chapter02\Formatting\obj\Debug\net8.0\refint\Formatting.dll
+C:\Users\nramsey-az\Desktop\cs12dotnet8\Chapter02\Formatting\obj\Debug\net8.0\Formatting.pdb
+C:\Users\nramsey-az\Desktop\cs12dotnet8\Chapter02\Formatting\obj\Debug\net8.0\Formatting.genruntimeconfig.cache
+C:\Users\nramsey-az\Desktop\cs12dotnet8\Chapter02\Formatting\obj\Debug\net8.0\ref\Formatting.dll
