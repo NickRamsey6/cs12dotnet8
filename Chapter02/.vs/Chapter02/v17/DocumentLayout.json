@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{9B970096-8675-4A61-B2BF-5F8D6F17FD1B}|Ch02Ex03Numbers\\Ch02Ex03Numbers.csproj|solutionrelative:ch02ex03numbers\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{83659B63-BA86-4157-B68F-A523CDF8C0FA}|Vocabulary\\Vocabulary.csproj|c:\\users\\nramsey-az\\desktop\\cs12dotnet8\\chapter02\\vocabulary\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83659B63-BA86-4157-B68F-A523CDF8C0FA}|Vocabulary\\Vocabulary.csproj|solutionrelative:vocabulary\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9B970096-8675-4A61-B2BF-5F8D6F17FD1B}|Ch02Ex03Numbers\\Ch02Ex03Numbers.csproj|c:\\users\\nramsey-az\\desktop\\cs12dotnet8\\chapter02\\ch02ex03numbers\\ch02ex03numbers.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{9B970096-8675-4A61-B2BF-5F8D6F17FD1B}|Ch02Ex03Numbers\\Ch02Ex03Numbers.csproj|solutionrelative:ch02ex03numbers\\ch02ex03numbers.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
@@ -62,11 +66,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter02\\Vocabulary\\Program.cs",
+              "RelativeDocumentMoniker": "Vocabulary\\Program.cs",
+              "ToolTip": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter02\\Vocabulary\\Program.cs",
+              "RelativeToolTip": "Vocabulary\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T22:39:02.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Ch02Ex03Numbers.csproj",
               "DocumentMoniker": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter02\\Ch02Ex03Numbers\\Ch02Ex03Numbers.csproj",
               "RelativeDocumentMoniker": "Ch02Ex03Numbers\\Ch02Ex03Numbers.csproj",
@@ -84,14 +101,14 @@
               "RelativeDocumentMoniker": "Ch02Ex03Numbers\\Program.cs",
               "ToolTip": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter02\\Ch02Ex03Numbers\\Program.cs",
               "RelativeToolTip": "Ch02Ex03Numbers\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAFAAAA",
+              "ViewState": "AQIAABkAAAAAAAAAAAAQwCYAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-06T19:37:07.256Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "AsyncConsole.csproj",
               "DocumentMoniker": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter02\\AsyncConsole\\AsyncConsole.csproj",
               "RelativeDocumentMoniker": "AsyncConsole\\AsyncConsole.csproj",
@@ -103,7 +120,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter02\\AsyncConsole\\Program.cs",
               "RelativeDocumentMoniker": "AsyncConsole\\Program.cs",
@@ -115,7 +132,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter02\\Arguments\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Arguments\\Properties\\launchSettings.json",
@@ -127,7 +144,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Arguments",
               "DocumentMoniker": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter02\\Arguments\\Arguments.csproj",
               "RelativeDocumentMoniker": "Arguments\\Arguments.csproj",
@@ -138,7 +155,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter02\\Arguments\\Program.cs",
               "RelativeDocumentMoniker": "Arguments\\Program.cs",
@@ -150,7 +167,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter02\\Formatting\\Program.cs",
               "RelativeDocumentMoniker": "Formatting\\Program.cs",
@@ -162,7 +179,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Formatting.csproj",
               "DocumentMoniker": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter02\\Formatting\\Formatting.csproj",
               "RelativeDocumentMoniker": "Formatting\\Formatting.csproj",
@@ -174,7 +191,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter02\\Variables\\Program.cs",
               "RelativeDocumentMoniker": "Variables\\Program.cs",
@@ -186,7 +203,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Numbers.csproj",
               "DocumentMoniker": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter02\\Numbers\\Numbers.csproj",
               "RelativeDocumentMoniker": "Numbers\\Numbers.csproj",
@@ -198,7 +215,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter02\\Numbers\\Program.cs",
               "RelativeDocumentMoniker": "Numbers\\Program.cs",
@@ -210,7 +227,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Vocabulary.GlobalUsings.g.cs",
               "DocumentMoniker": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter02\\Vocabulary\\obj\\Debug\\net8.0\\Vocabulary.GlobalUsings.g.cs",
               "RelativeDocumentMoniker": "Vocabulary\\obj\\Debug\\net8.0\\Vocabulary.GlobalUsings.g.cs",

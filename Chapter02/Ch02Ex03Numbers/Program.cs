@@ -1,4 +1,6 @@
-﻿unsafe
+﻿using System.Runtime.InteropServices;
+
+unsafe
 {
     Console.WriteLine();
     Console.WriteLine($"Type    {"Byte(s) of memory",-4} {"Min",32} {"Max",45}");
@@ -22,18 +24,16 @@
 // Loop through array and print to console thier stats
 unsafe
 {
-    List<string> listOfTypes = new List<string>();
-    listOfTypes.Add("Sbyte");
-    listOfTypes.Add("Byte");
-    listOfTypes.Add("Int16");
-    listOfTypes.Add("UInt16");
-    listOfTypes.Add("Double");
-    foreach (TypeCode t in Enum.GetValues(typeof(TypeCode)))
+    var typesList = new[] { typeof(sbyte), typeof(byte), typeof(short), typeof(ushort), typeof(int), typeof(uint), typeof(long), typeof(ulong), typeof(float), typeof(double), typeof(decimal) };
+    Console.WriteLine();
+    Console.WriteLine($"Type    {"Byte(s) of memory",-4} {"Min",32} {"Max",45}");
+    foreach (var type in typesList)
     {
-        // check if typecode in list
-        if (listOfTypes.Contains(t.ToString()))
-            Console.WriteLine($"{t.ToString()} {t.GetType,15} ");
-        else
-            Console.WriteLine("Not found");
+        Console.WriteLine(
+            "{0} {1, 10} {2, 32} {3, 45}",
+            type.Name,
+            Marshal.SizeOf(Activator.CreateInstance(type)),
+            type.GetField("MinValue").GetValue(null),
+            type.GetField("MaxValue").GetValue(null));
     }
 }
