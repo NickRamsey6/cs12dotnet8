@@ -67,15 +67,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Ch02Ex03Numbers",
+              "Title": "Ch02Ex03Numbers.csproj",
               "DocumentMoniker": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter02\\Ch02Ex03Numbers\\Ch02Ex03Numbers.csproj",
               "RelativeDocumentMoniker": "Ch02Ex03Numbers\\Ch02Ex03Numbers.csproj",
               "ToolTip": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter02\\Ch02Ex03Numbers\\Ch02Ex03Numbers.csproj",
               "RelativeToolTip": "Ch02Ex03Numbers\\Ch02Ex03Numbers.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-06-06T20:00:10.197Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-06T20:00:10.197Z"
             },
             {
               "$type": "Document",
@@ -85,7 +84,7 @@
               "RelativeDocumentMoniker": "Ch02Ex03Numbers\\Program.cs",
               "ToolTip": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter02\\Ch02Ex03Numbers\\Program.cs",
               "RelativeToolTip": "Ch02Ex03Numbers\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-06T19:37:07.256Z",
               "EditorCaption": ""
@@ -93,15 +92,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "AsyncConsole",
+              "Title": "AsyncConsole.csproj",
               "DocumentMoniker": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter02\\AsyncConsole\\AsyncConsole.csproj",
               "RelativeDocumentMoniker": "AsyncConsole\\AsyncConsole.csproj",
               "ToolTip": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter02\\AsyncConsole\\AsyncConsole.csproj",
               "RelativeToolTip": "AsyncConsole\\AsyncConsole.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-06-06T17:06:56.412Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-06T17:06:56.412Z"
             },
             {
               "$type": "Document",
@@ -113,8 +111,7 @@
               "RelativeToolTip": "AsyncConsole\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T17:02:34.227Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-06T17:02:34.227Z"
             },
             {
               "$type": "Document",
@@ -126,8 +123,7 @@
               "RelativeToolTip": "Arguments\\Properties\\launchSettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-06-06T16:48:06.937Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-06T16:48:06.937Z"
             },
             {
               "$type": "Document",
@@ -138,8 +134,7 @@
               "ToolTip": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter02\\Arguments\\Arguments.csproj",
               "RelativeToolTip": "Arguments\\Arguments.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-06-06T16:46:56.86Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-06T16:46:56.86Z"
             },
             {
               "$type": "Document",
@@ -151,8 +146,7 @@
               "RelativeToolTip": "Arguments\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T16:45:28.14Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-06T16:45:28.14Z"
             },
             {
               "$type": "Document",
@@ -164,21 +158,19 @@
               "RelativeToolTip": "Formatting\\Program.cs",
               "ViewState": "AQIAAA8AAAAAAAAAAAAAACEAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T16:19:13.921Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-06T16:19:13.921Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "Formatting",
+              "Title": "Formatting.csproj",
               "DocumentMoniker": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter02\\Formatting\\Formatting.csproj",
               "RelativeDocumentMoniker": "Formatting\\Formatting.csproj",
               "ToolTip": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter02\\Formatting\\Formatting.csproj",
               "RelativeToolTip": "Formatting\\Formatting.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-06-06T16:17:58.464Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-06T16:17:58.464Z"
             },
             {
               "$type": "Document",
@@ -190,8 +182,7 @@
               "RelativeToolTip": "Variables\\Program.cs",
               "ViewState": "AQIAACQAAAAAAAAAAAAAAC8AAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T14:15:48.283Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-06T14:15:48.283Z"
             },
             {
               "$type": "Document",
@@ -203,8 +194,7 @@
               "RelativeToolTip": "Numbers\\Numbers.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-06-05T22:57:48.304Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-05T22:57:48.304Z"
             },
             {
               "$type": "Document",
@@ -216,8 +206,7 @@
               "RelativeToolTip": "Numbers\\Program.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAAEIAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T22:43:21.56Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-05T22:43:21.56Z"
             },
             {
               "$type": "Document",
@@ -229,8 +218,7 @@
               "RelativeToolTip": "Vocabulary\\obj\\Debug\\net8.0\\Vocabulary.GlobalUsings.g.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T16:52:05.681Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-05T16:52:05.681Z"
             }
           ]
         }

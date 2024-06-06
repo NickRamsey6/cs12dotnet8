@@ -1,6 +1,4 @@
-﻿// array of number types that we want to find the bytes of memory, min and max for
-// Loop through array and print to console thier stats
-unsafe
+﻿unsafe
 {
     Console.WriteLine();
     Console.WriteLine($"Type    {"Byte(s) of memory",-4} {"Min",32} {"Max",45}");
@@ -20,3 +18,22 @@ unsafe
     Console.WriteLine($"decimal {sizeof(decimal),15} {decimal.MinValue,37} {decimal.MaxValue,45}");
 }
 
+// array of number types that we want to find the bytes of memory, min and max for
+// Loop through array and print to console thier stats
+unsafe
+{
+    List<string> listOfTypes = new List<string>();
+    listOfTypes.Add("Sbyte");
+    listOfTypes.Add("Byte");
+    listOfTypes.Add("Int16");
+    listOfTypes.Add("UInt16");
+    listOfTypes.Add("Double");
+    foreach (TypeCode t in Enum.GetValues(typeof(TypeCode)))
+    {
+        // check if typecode in list
+        if (listOfTypes.Contains(t.ToString()))
+            Console.WriteLine($"{t.ToString()} {t.GetType,15} ");
+        else
+            Console.WriteLine("Not found");
+    }
+}
