@@ -18,3 +18,19 @@
 **Answer: .NET compiles C# and F# code to intermediate language code. The IL code is then compiled to Just In Time code that can be run natively on a CPU by the Comman Language Runtime (CLR)**
 5. What is a top-level program and how do you access any command-line arguments?  
 **Answer: Top level programs do not explicitly define a Program class or Main method to access command-line arguments. You can type statements without the boilerplate code. Command line arguments are accessed via the console.**
+6. What is the name of the entry method of a .NET console app and how should it be explicitly declared if you are not using the top-level program feature?  
+**Answer: The Main method.**
+7. What namespace is the program class defined in with a top level program?  
+**Answer: The null namespace**
+8. Where would you liik for help with a C# keyword?  
+**Answer: Microsoft learn website, stackoverflow, GeeksforGeeks, w2 schools, etc.**
+9. Where would you look first for solutions to common programming problems?  
+**Answer: Stackoverflow**
+10. What should you do after getting an AI to write code for you?  
+**Answer: Test it**
+
+## Projects List
+* HelloCS - Writing to the console and trying out the Null Coalescing Operator
+* AboutMyEnvironment - Exploring namespaces
+
+## My Takeaways
