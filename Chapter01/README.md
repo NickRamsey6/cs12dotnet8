@@ -22,7 +22,7 @@
 **Answer: The Main method.**
 7. What namespace is the program class defined in with a top level program?  
 **Answer: The null namespace**
-8. Where would you liik for help with a C# keyword?  
+8. Where would you look for help with a C# keyword?  
 **Answer: Microsoft learn website, stackoverflow, GeeksforGeeks, w2 schools, etc.**
 9. Where would you look first for solutions to common programming problems?  
 **Answer: Stackoverflow**
