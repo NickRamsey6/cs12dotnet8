@@ -20,6 +20,24 @@
 | Total # of Stars in the Universe | ULong| ULong can go up to about 18quadrillion
 | # of Employees for each business in USA | UShort| UShort only requires 2 bytes of memory|
 
+## Number Types and Their Memory
+| Type | Byte(s) of Memory |
+|------|-------------------|
+| sbyte | 1 |
+| byte | 1 |
+| short | 2 |
+| ushort | 2 |
+| int | 4 |
+| uint | 4 |
+| long | 8 |
+| ulong | 8 |
+| Int128| 16 |
+| UInt128 | 16 |
+| Half | 2 |
+| float | 4 |
+| double | 8 |
+| decimal | 16 |
+
 ## Practice Questions
 1. What statement can you type in a C# file to discover the compiler and language version?  
 **Answer: ```#error version```**

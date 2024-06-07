@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter02\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9B970096-8675-4A61-B2BF-5F8D6F17FD1B}|Ch02Ex03Numbers\\Ch02Ex03Numbers.csproj|c:\\users\\nramsey-az\\desktop\\cs12dotnet8\\chapter02\\ch02ex03numbers\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B970096-8675-4A61-B2BF-5F8D6F17FD1B}|Ch02Ex03Numbers\\Ch02Ex03Numbers.csproj|solutionrelative:ch02ex03numbers\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C7C305DE-5FB5-43A1-903A-2C0132D8E603}|AsyncConsole\\AsyncConsole.csproj|c:\\users\\nramsey-az\\desktop\\cs12dotnet8\\chapter02\\asyncconsole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C7C305DE-5FB5-43A1-903A-2C0132D8E603}|AsyncConsole\\AsyncConsole.csproj|solutionrelative:asyncconsole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C7C305DE-5FB5-43A1-903A-2C0132D8E603}|AsyncConsole\\AsyncConsole.csproj|c:\\users\\nramsey-az\\desktop\\cs12dotnet8\\chapter02\\asyncconsole\\asyncconsole.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{C7C305DE-5FB5-43A1-903A-2C0132D8E603}|AsyncConsole\\AsyncConsole.csproj|solutionrelative:asyncconsole\\asyncconsole.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9B970096-8675-4A61-B2BF-5F8D6F17FD1B}|Ch02Ex03Numbers\\Ch02Ex03Numbers.csproj|c:\\users\\nramsey-az\\desktop\\cs12dotnet8\\chapter02\\ch02ex03numbers\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B970096-8675-4A61-B2BF-5F8D6F17FD1B}|Ch02Ex03Numbers\\Ch02Ex03Numbers.csproj|solutionrelative:ch02ex03numbers\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{82E33133-7A18-4A75-B60E-FFC94DCA334E}|Arguments\\Arguments.csproj|c:\\users\\nramsey-az\\desktop\\cs12dotnet8\\chapter02\\arguments\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -58,24 +58,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter02\\Ch02Ex03Numbers\\Program.cs",
               "RelativeDocumentMoniker": "Ch02Ex03Numbers\\Program.cs",
               "ToolTip": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter02\\Ch02Ex03Numbers\\Program.cs",
               "RelativeToolTip": "Ch02Ex03Numbers\\Program.cs",
-              "ViewState": "AQIAAAwAAADAZmZmZqYswEYAAAABAAAA",
+              "ViewState": "AQIAAAwAAADAZmZmZqYswDAAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-06T19:37:07.256Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "AsyncConsole.csproj",
               "DocumentMoniker": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter02\\AsyncConsole\\AsyncConsole.csproj",
               "RelativeDocumentMoniker": "AsyncConsole\\AsyncConsole.csproj",
@@ -83,12 +83,11 @@
               "RelativeToolTip": "AsyncConsole\\AsyncConsole.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-06-06T17:06:56.412Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-06T17:06:56.412Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter02\\AsyncConsole\\Program.cs",
               "RelativeDocumentMoniker": "AsyncConsole\\Program.cs",
