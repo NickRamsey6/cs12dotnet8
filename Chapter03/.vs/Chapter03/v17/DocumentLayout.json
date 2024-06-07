@@ -23,15 +23,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Operators",
+              "Title": "Operators.csproj",
               "DocumentMoniker": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter03\\Operators\\Operators.csproj",
               "RelativeDocumentMoniker": "Operators\\Operators.csproj",
               "ToolTip": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter03\\Operators\\Operators.csproj",
               "RelativeToolTip": "Operators\\Operators.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-06-06T21:07:54.407Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-06T21:07:54.407Z"
             },
             {
               "$type": "Document",
@@ -39,9 +38,9 @@
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter03\\Operators\\Program.cs",
               "RelativeDocumentMoniker": "Operators\\Program.cs",
-              "ToolTip": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter03\\Operators\\Program.cs",
-              "RelativeToolTip": "Operators\\Program.cs",
-              "ViewState": "AQIAADUAAAAAAAAAAAAYwFEAAAABAAAA",
+              "ToolTip": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter03\\Operators\\Program.cs*",
+              "RelativeToolTip": "Operators\\Program.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-06T21:07:44.972Z",
               "EditorCaption": ""

@@ -16,7 +16,7 @@ int f = 3;
 WriteLine($"e is {e}, f if {f}");
 WriteLine($"e + f = {e + f}");
 WriteLine($"e - f = {e - f}");
-WriteLine($"e * f = {e *  f}");
+WriteLine($"e * f = {e * f}");
 WriteLine($"e / f = {e / f}");
 WriteLine($"e % f = {e % f}");
 
@@ -46,31 +46,50 @@ authorName ??= "unknown";
 WriteLine($"The author's name is {authorName}.");
 #endregion
 
-#region exploring logical operators - DOES NOT WORK
-bool p = true;
-bool q = false;
-//WriteLine($"AND  | p     | q    ");
-//WriteLine($"p    | {p & p,-5} | {p & q,-5} ");
-//WriteLine($"q    | {q & p,-5} | {q & q,-5} ");
-//WriteLine();
-//WriteLine($"OR   | p     | q    ");
-//WriteLine($"p    | {p | p,-5} | {p | q,-5} ");
-//WriteLine($"q    | {q | p,-5} | {q | q,-5} ");
-//WriteLine();
-//WriteLine($"XOR  | p     | q    ");
-//WriteLine($"p    | {p ^ p,-5} | {p ^ q,-5} ");
-//WriteLine($"q    | {q ^ p,-5} | {q ^ q,-5} ");
-//WriteLine();
+#region Exploring logical operators
+bool t = true;
+bool z = false;
+
+WriteLine($"AND  | t     | z    ");
+WriteLine($"t    | {t & t,-5} | {t & z,-5} ");
+WriteLine($"z    | {z & t,-5} | {z & z,-5} ");
+WriteLine();
+WriteLine($"OR   | t     | z    ");
+WriteLine($"t    | {t | t,-5} | {t | z,-5} ");
+WriteLine($"z    | {z | t,-5} | {z | z,-5} ");
+WriteLine();
+WriteLine($"XOR  | t     | z    ");
+WriteLine($"t    | {t ^ t,-5} | {t ^ z,-5} ");
+WriteLine($"z    | {z ^ t,-5} | {z ^ z,-5} ");
 
 #endregion
 
 #region Exploring conditional logical operators
-
+WriteLine();
+// Note that DoStuff will return true
+WriteLine($"t & DoStuff() = {t & DoStuff()}");
+WriteLine($"z & DoStuff() = {z & DoStuff()}");
 
 WriteLine();
-// Note that DoStuff() returns true
-WriteLine($"p & DoStuff() = {p & DoStuff()}");
-WriteLine($"q & DoStuff() = {q & DoStuff()}");
+// Note that DoStuff will return true
+WriteLine($"t && DoStuff() = {t && DoStuff()}");
+WriteLine($"z && DoStuff() = {z && DoStuff()}");
+#endregion
+
+#region Exploring bitwise and binary shift operators
+WriteLine();
+
+int x = 10;
+int y = 6;
+
+WriteLine($"Expression | Decimal |   Binary");
+WriteLine($"-------------------------------");
+// B:8 means format in binary with 8 digits
+WriteLine($"x          |  {x,7} | {x:B8}");
+WriteLine($"y          |  {y,7} | {x:B8}");
+WriteLine($"x & y      | {x & y,7} | {x & y:B8}");
+WriteLine($"x | y      | {x | y,7} | {x | y:B8}");
+WriteLine($"x ^ y      | {x ^ y,7} | {x ^ y:B8}");
 
 #endregion
 
@@ -78,5 +97,4 @@ static bool DoStuff()
 {
     WriteLine("I am doing some stuff.");
     return true;
-
 }
