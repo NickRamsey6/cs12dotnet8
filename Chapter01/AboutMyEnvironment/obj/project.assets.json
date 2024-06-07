@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\cs12dotnet8\\Chapter01\\AboutMyEnvironment\\AboutMyEnvironment.csproj",
+      "projectUniqueName": "C:\\Users\\nramsey-az\\desktop\\cs12dotnet8\\Chapter01\\AboutMyEnvironment\\AboutMyEnvironment.csproj",
       "projectName": "AboutMyEnvironment",
-      "projectPath": "C:\\cs12dotnet8\\Chapter01\\AboutMyEnvironment\\AboutMyEnvironment.csproj",
+      "projectPath": "C:\\Users\\nramsey-az\\desktop\\cs12dotnet8\\Chapter01\\AboutMyEnvironment\\AboutMyEnvironment.csproj",
       "packagesPath": "C:\\Users\\nramsey-az\\.nuget\\packages\\",
-      "outputPath": "C:\\cs12dotnet8\\Chapter01\\AboutMyEnvironment\\obj\\",
+      "outputPath": "C:\\Users\\nramsey-az\\desktop\\cs12dotnet8\\Chapter01\\AboutMyEnvironment\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
