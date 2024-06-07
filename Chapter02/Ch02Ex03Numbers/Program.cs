@@ -24,9 +24,10 @@ unsafe
     Console.WriteLine($"decimal {sizeof(decimal),15} {decimal.MinValue,37} {decimal.MaxValue,45}");
 }
 
-// Refactor to use list of data types to programtically loop through and print name, sizeof, MinValue and MaxValue
-unsafe
+//Console.WriteLine($"{ sizeof(sbyte)}");
+//Console.WriteLine($"{sizeof(Half)}");
 {
+    // Refactor to use list of data types to programtically loop through and print name, sizeof, MinValue and MaxValue
     // typeof operator sets these values as their System.Type objects at compile time
     // These objects have access to the important Properties and Fields I need
     var typesList = new[] { typeof(sbyte), typeof(byte), typeof(short), typeof(ushort), typeof(int), typeof(uint), typeof(long), typeof(ulong), typeof(float), typeof(double), typeof(decimal) };
