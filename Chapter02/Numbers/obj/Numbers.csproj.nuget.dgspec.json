@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nramsey-az\\desktop\\cs12dotnet8\\Chapter02\\Numbers\\Numbers.csproj": {}
+    "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter02\\Numbers\\Numbers.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nramsey-az\\desktop\\cs12dotnet8\\Chapter02\\Numbers\\Numbers.csproj": {
+    "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter02\\Numbers\\Numbers.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nramsey-az\\desktop\\cs12dotnet8\\Chapter02\\Numbers\\Numbers.csproj",
+        "projectUniqueName": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter02\\Numbers\\Numbers.csproj",
         "projectName": "Numbers",
-        "projectPath": "C:\\Users\\nramsey-az\\desktop\\cs12dotnet8\\Chapter02\\Numbers\\Numbers.csproj",
+        "projectPath": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter02\\Numbers\\Numbers.csproj",
         "packagesPath": "C:\\Users\\nramsey-az\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nramsey-az\\desktop\\cs12dotnet8\\Chapter02\\Numbers\\obj\\",
+        "outputPath": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter02\\Numbers\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
