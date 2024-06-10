@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter03\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{550E7404-5D9F-4BE5-9E4C-73735B8C0FF2}|IterationStatements\\IterationStatements.csproj|c:\\users\\nramsey-az\\desktop\\cs12dotnet8\\chapter03\\iterationstatements\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{550E7404-5D9F-4BE5-9E4C-73735B8C0FF2}|IterationStatements\\IterationStatements.csproj|solutionrelative:iterationstatements\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CA36AFDE-F1A8-49C3-A564-94CD68BDF1F3}|SelectionStatements\\SelectionStatements.csproj|c:\\users\\nramsey-az\\desktop\\cs12dotnet8\\chapter03\\selectionstatements\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CA36AFDE-F1A8-49C3-A564-94CD68BDF1F3}|SelectionStatements\\SelectionStatements.csproj|solutionrelative:selectionstatements\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -26,11 +30,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter03\\IterationStatements\\Program.cs",
+              "RelativeDocumentMoniker": "IterationStatements\\Program.cs",
+              "ToolTip": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter03\\IterationStatements\\Program.cs*",
+              "RelativeToolTip": "IterationStatements\\Program.cs*",
+              "ViewState": "AQIAABkAAAAAAAAAAAAkwDcAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T14:20:37.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Animals.cs",
               "DocumentMoniker": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter03\\SelectionStatements\\Animals.cs",
               "RelativeDocumentMoniker": "SelectionStatements\\Animals.cs",
@@ -38,17 +55,16 @@
               "RelativeToolTip": "SelectionStatements\\Animals.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwA8AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T22:13:31.19Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-07T22:13:31.19Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter03\\SelectionStatements\\Program.cs",
               "RelativeDocumentMoniker": "SelectionStatements\\Program.cs",
-              "ToolTip": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter03\\SelectionStatements\\Program.cs*",
-              "RelativeToolTip": "SelectionStatements\\Program.cs*",
+              "ToolTip": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter03\\SelectionStatements\\Program.cs",
+              "RelativeToolTip": "SelectionStatements\\Program.cs",
               "ViewState": "AQIAAE4AAAAAAAAAAAAqwGcAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-07T21:40:05.868Z",
@@ -56,7 +72,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Operators.csproj",
               "DocumentMoniker": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter03\\Operators\\Operators.csproj",
               "RelativeDocumentMoniker": "Operators\\Operators.csproj",
@@ -64,12 +80,11 @@
               "RelativeToolTip": "Operators\\Operators.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-06-06T21:07:54.407Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-06T21:07:54.407Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter03\\Operators\\Program.cs",
               "RelativeDocumentMoniker": "Operators\\Program.cs",
@@ -77,8 +92,7 @@
               "RelativeToolTip": "Operators\\Program.cs",
               "ViewState": "AQIAABIAAAAAAAAAAAAAACEAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T21:07:44.972Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-06T21:07:44.972Z"
             }
           ]
         }
