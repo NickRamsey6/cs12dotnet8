@@ -1,29 +1,29 @@
 ﻿#region Working with single-dimensional arrays
-//string[] names; // This can reference any size array of strings
+string[] names; // This can reference any size array of strings
 
-//// Allocate memory for four strings in an array
-//names = new string[4];
+// Allocate memory for four strings in an array
+names = new string[4];
 
-//// Store items at these index positions
-//names[0] = "Barry";
-//names[1] = "Hank";
-//names[2] = "Babe";
-//names[3] = "Albert";
+// Store items at these index positions
+names[0] = "Barry";
+names[1] = "Hank";
+names[2] = "Babe";
+names[3] = "Albert";
 
-//// Loop through the names
-//for (int i = 0; i < names.Length; i++)
-//{
-//    // Output the item at index position i
-//    Console.WriteLine($"{names[i]} is at position {i}.");
-//}
+// Loop through the names
+for (int i = 0; i < names.Length; i++)
+{
+    // Output the item at index position i
+    Console.WriteLine($"{names[i]} is at position {i}.");
+}
 
-//// Alternative syntax for creating and initializing an array
-//string[] names2 = { "Barry", "Hank", "Babe", "Albert" };
-//for (int i = 0; i < names.Length; i++)
-//{
-//    // Output the item at index position i
-//    Console.WriteLine($"{names2[i]} is at position {i}.");
-//}
+// Alternative syntax for creating and initializing an array
+string[] names2 = { "Barry", "Hank", "Babe", "Albert" };
+for (int i = 0; i < names.Length; i++)
+{
+    // Output the item at index position i
+    Console.WriteLine($"{names2[i]} is at position {i}.");
+}
 #endregion
 
 #region Working with multi-dimensional arrays

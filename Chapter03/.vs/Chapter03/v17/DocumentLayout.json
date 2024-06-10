@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter03\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5EC3FF7C-71C2-410B-A210-D04482F73167}|HandlingExceptions\\HandlingExceptions.csproj|c:\\users\\nramsey-az\\desktop\\cs12dotnet8\\chapter03\\handlingexceptions\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5EC3FF7C-71C2-410B-A210-D04482F73167}|HandlingExceptions\\HandlingExceptions.csproj|solutionrelative:handlingexceptions\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AAB71F46-A490-4B84-AA36-A165DF3D8B75}|CastingConverting\\CastingConverting.csproj|c:\\users\\nramsey-az\\desktop\\cs12dotnet8\\chapter03\\castingconverting\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AAB71F46-A490-4B84-AA36-A165DF3D8B75}|CastingConverting\\CastingConverting.csproj|solutionrelative:castingconverting\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,12 +23,12 @@
       "RelativeMoniker": "D:0:0:{CA36AFDE-F1A8-49C3-A564-94CD68BDF1F3}|SelectionStatements\\SelectionStatements.csproj|solutionrelative:selectionstatements\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CA36AFDE-F1A8-49C3-A564-94CD68BDF1F3}|SelectionStatements\\SelectionStatements.csproj|c:\\users\\nramsey-az\\desktop\\cs12dotnet8\\chapter03\\selectionstatements\\animals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CA36AFDE-F1A8-49C3-A564-94CD68BDF1F3}|SelectionStatements\\SelectionStatements.csproj|solutionrelative:selectionstatements\\animals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3F85D38F-255E-4052-A5BB-A2ED15E92207}|Operators\\Operators.csproj|c:\\users\\nramsey-az\\desktop\\cs12dotnet8\\chapter03\\operators\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F85D38F-255E-4052-A5BB-A2ED15E92207}|Operators\\Operators.csproj|solutionrelative:operators\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA36AFDE-F1A8-49C3-A564-94CD68BDF1F3}|SelectionStatements\\SelectionStatements.csproj|c:\\users\\nramsey-az\\desktop\\cs12dotnet8\\chapter03\\selectionstatements\\animals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA36AFDE-F1A8-49C3-A564-94CD68BDF1F3}|SelectionStatements\\SelectionStatements.csproj|solutionrelative:selectionstatements\\animals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3F85D38F-255E-4052-A5BB-A2ED15E92207}|Operators\\Operators.csproj|c:\\users\\nramsey-az\\desktop\\cs12dotnet8\\chapter03\\operators\\operators.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -44,44 +48,57 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter03\\CastingConverting\\Program.cs",
-              "RelativeDocumentMoniker": "CastingConverting\\Program.cs",
-              "ToolTip": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter03\\CastingConverting\\Program.cs",
-              "RelativeToolTip": "CastingConverting\\Program.cs",
-              "ViewState": "AQIAAGEAAAAAAAAAAAAiwIgAAAABAAAA",
+              "DocumentMoniker": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter03\\HandlingExceptions\\Program.cs",
+              "RelativeDocumentMoniker": "HandlingExceptions\\Program.cs",
+              "ToolTip": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter03\\HandlingExceptions\\Program.cs",
+              "RelativeToolTip": "HandlingExceptions\\Program.cs",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAAAF8AAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-10T20:08:36.716Z",
+              "WhenOpened": "2024-06-10T21:21:02.865Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter03\\Arrays\\Program.cs",
-              "RelativeDocumentMoniker": "Arrays\\Program.cs",
-              "ToolTip": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter03\\Arrays\\Program.cs",
-              "RelativeToolTip": "Arrays\\Program.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAYwHkAAAAAAAAA",
+              "DocumentMoniker": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter03\\CastingConverting\\Program.cs",
+              "RelativeDocumentMoniker": "CastingConverting\\Program.cs",
+              "ToolTip": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter03\\CastingConverting\\Program.cs",
+              "RelativeToolTip": "CastingConverting\\Program.cs",
+              "ViewState": "AQIAAGYAAAAAAAAAAAAAAIgAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-10T15:05:00.83Z",
+              "WhenOpened": "2024-06-10T20:08:36.716Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter03\\Arrays\\Program.cs",
+              "RelativeDocumentMoniker": "Arrays\\Program.cs",
+              "ToolTip": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter03\\Arrays\\Program.cs",
+              "RelativeToolTip": "Arrays\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T15:05:00.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter03\\IterationStatements\\Program.cs",
               "RelativeDocumentMoniker": "IterationStatements\\Program.cs",
               "ToolTip": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter03\\IterationStatements\\Program.cs",
               "RelativeToolTip": "IterationStatements\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADoAAAAKAAAA",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAADoAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-10T14:20:37.775Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Animals.cs",
               "DocumentMoniker": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter03\\SelectionStatements\\Animals.cs",
               "RelativeDocumentMoniker": "SelectionStatements\\Animals.cs",
@@ -93,20 +110,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter03\\SelectionStatements\\Program.cs",
               "RelativeDocumentMoniker": "SelectionStatements\\Program.cs",
               "ToolTip": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter03\\SelectionStatements\\Program.cs",
               "RelativeToolTip": "SelectionStatements\\Program.cs",
-              "ViewState": "AQIAAE4AAAAAAAAAAAAqwGcAAAABAAAA",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAAAGcAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-07T21:40:05.868Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Operators.csproj",
               "DocumentMoniker": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter03\\Operators\\Operators.csproj",
               "RelativeDocumentMoniker": "Operators\\Operators.csproj",
@@ -124,9 +141,10 @@
               "RelativeDocumentMoniker": "Operators\\Program.cs",
               "ToolTip": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter03\\Operators\\Program.cs",
               "RelativeToolTip": "Operators\\Program.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAACEAAAAkAAAA",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAACEAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T21:07:44.972Z"
+              "WhenOpened": "2024-06-06T21:07:44.972Z",
+              "EditorCaption": ""
             }
           ]
         }
