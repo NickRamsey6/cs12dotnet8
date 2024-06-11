@@ -7,13 +7,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Operators", "Operators\Oper
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SelectionStatements", "SelectionStatements\SelectionStatements.csproj", "{CA36AFDE-F1A8-49C3-A564-94CD68BDF1F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IterationStatements", "IterationStatements\IterationStatements.csproj", "{550E7404-5D9F-4BE5-9E4C-73735B8C0FF2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IterationStatements", "IterationStatements\IterationStatements.csproj", "{550E7404-5D9F-4BE5-9E4C-73735B8C0FF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arrays", "Arrays\Arrays.csproj", "{6F1B1256-6187-45CB-8CDC-45A34E7ED911}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arrays", "Arrays\Arrays.csproj", "{6F1B1256-6187-45CB-8CDC-45A34E7ED911}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CastingConverting", "CastingConverting\CastingConverting.csproj", "{AAB71F46-A490-4B84-AA36-A165DF3D8B75}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CastingConverting", "CastingConverting\CastingConverting.csproj", "{AAB71F46-A490-4B84-AA36-A165DF3D8B75}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandlingExceptions", "HandlingExceptions\HandlingExceptions.csproj", "{5EC3FF7C-71C2-410B-A210-D04482F73167}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HandlingExceptions", "HandlingExceptions\HandlingExceptions.csproj", "{5EC3FF7C-71C2-410B-A210-D04482F73167}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch03Ex02LoopsAndOverflow", "Ch03Ex02LoopsAndOverflow\Ch03Ex02LoopsAndOverflow.csproj", "{351F59EE-7FB2-49B2-9D8C-D2ACAB1CDD89}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{5EC3FF7C-71C2-410B-A210-D04482F73167}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5EC3FF7C-71C2-410B-A210-D04482F73167}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5EC3FF7C-71C2-410B-A210-D04482F73167}.Release|Any CPU.Build.0 = Release|Any CPU
+		{351F59EE-7FB2-49B2-9D8C-D2ACAB1CDD89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{351F59EE-7FB2-49B2-9D8C-D2ACAB1CDD89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{351F59EE-7FB2-49B2-9D8C-D2ACAB1CDD89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{351F59EE-7FB2-49B2-9D8C-D2ACAB1CDD89}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

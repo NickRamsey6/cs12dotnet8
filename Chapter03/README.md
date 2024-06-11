@@ -56,6 +56,10 @@
 10. What interface must an object "implement" to be enumerated over by using the foreach statement?  
 **Answer: The IEnumerable interface. It must have the correct methods with the correct signatures even if the object does not actually implement the interface.**
 
+## Exercise 3.2 - Explore loops and overflow  
+The iterator variable is cast as a byte. Bytes have a max value of 255. The loop is counting til 255, then overflowing back to the min value of 0 and counting up again. It is an infite loop because it will never hit the conditional expression of < 500.  
+**Adding a checked statement block around the exisiting code throws the overflow exception**
+
 
 ## Projects List
 * Operators - Unary, Binary, Assignment, Null Coalescing, Logical, Conditional Logical, Bitwise and Shift Operators
