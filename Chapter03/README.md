@@ -33,6 +33,14 @@
 | Array of arrays of arrays aka three-dimensional jagged array | string[][][] |
 
 
+## Projects List
+* Operators - Unary, Binary, Assignment, Null Coalescing, Logical, Conditional Logical, Bitwise and Shift Operators
+* SelectionStatements - if/else and cases
+* IterationStatements - Looping with While, Do, For, and ForEach
+* Arrays - Single, Multi-Dimensional, and Jagged Arrays Plus Pattern Matching
+* CastingConverting - Explicit vs Implicit Casting, Using System.Convert type, Rounding, Encoding and Parsing
+* HandlingExceptions - Try/Catch Blocks, Filters, Exceptions, and Checked/Unchecked Blocks
+
 ## Practice Questions
 1. What happens when you divide an int variable by 0?  
 **Answer: The System.DivideByZeroException is thrown**
@@ -61,14 +69,16 @@ The iterator variable is cast as a byte. Bytes have a max value of 255. The loop
 **Adding a checked statement block around the exisiting code throws the overflow exception**
 
 
-## Projects List
-* Operators - Unary, Binary, Assignment, Null Coalescing, Logical, Conditional Logical, Bitwise and Shift Operators
-* SelectionStatements - if/else and cases
-* IterationStatements - Looping with While, Do, For, and ForEach
-* Arrays - Single, Multi-Dimensional, and Jagged Arrays Plus Pattern Matching
-* CastingConverting - Explicit vs Implicit Casting, Using System.Convert type, Rounding, Encoding and Parsing
-* HandlingExceptions - Try/Catch Blocks, Filters, Exceptions, and Checked/Unchecked Blocks
+## Practice Example Projects
+* Ch03Ex02LoopsAndOverflow - Fix an infinite loop with a checked block
+* Cho03Ex03Operators - See the effects of incremet, binary shift and bitwise operators
+* Ch03Ex04FizzBuzz - Write FizzBuzz program using if/else if and modulo operands
+* Cho3Ex05Exceptions - Parse console input and catch any exceptions
 
-## My takeaways
+## My takeaways / Questions
 Exclamtion mark (!) is the null-forgiving operator. It disables the compiler warning and has no effect on runtime. Example:  
-``` int age = int.Parse(input!); ``` 
+``` int age = int.Parse(input!); ```   
+Is it better to catch as many known/expected exceptions or should you just catch all and trust the built-in warnings?  
+How do the checked blocks work? Are they commonly used?  
+When is it casting vs when is it converting?  
+Should I know what to expect with the binary operators? Like should I know what 8 << 2 = ? 
