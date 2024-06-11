@@ -81,4 +81,5 @@ Exclamtion mark (!) is the null-forgiving operator. It disables the compiler war
 Is it better to catch as many known/expected exceptions or should you just catch all and trust the built-in warnings?  
 How do the checked blocks work? Are they commonly used?  
 When is it casting vs when is it converting?  
-Should I know what to expect with the binary operators? Like should I know what 8 << 2 = ? 
+Should I know what to expect with the binary operators? Like should I know what 8 << 2 = ?  
+Watch out for silent overflow
