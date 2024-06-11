@@ -14,4 +14,5 @@
 
 
 ## My takeaways / Questions
+Nice to see how functions will display parameters and VisualStudio will help you use the functions correctly.  
 

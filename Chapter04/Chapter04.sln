@@ -5,6 +5,8 @@ VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopLevelFunctions", "TopLevelFunctions\TopLevelFunctions.csproj", "{CBD41644-D214-440F-A5BA-8E2D3E4E0EED}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WritingFunctions", "WritingFunctions\WritingFunctions.csproj", "{D0D56161-9547-4D1A-87FB-11A21AA4C171}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{CBD41644-D214-440F-A5BA-8E2D3E4E0EED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CBD41644-D214-440F-A5BA-8E2D3E4E0EED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CBD41644-D214-440F-A5BA-8E2D3E4E0EED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0D56161-9547-4D1A-87FB-11A21AA4C171}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0D56161-9547-4D1A-87FB-11A21AA4C171}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0D56161-9547-4D1A-87FB-11A21AA4C171}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0D56161-9547-4D1A-87FB-11A21AA4C171}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
