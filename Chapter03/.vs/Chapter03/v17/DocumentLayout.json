@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter03\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{EFB112E8-B9B7-4723-A650-054612726E10}|Ch03Ex03Operators\\Ch03Ex03Operators.csproj|c:\\users\\nramsey-az\\desktop\\cs12dotnet8\\chapter03\\ch03ex03operators\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFB112E8-B9B7-4723-A650-054612726E10}|Ch03Ex03Operators\\Ch03Ex03Operators.csproj|solutionrelative:ch03ex03operators\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{351F59EE-7FB2-49B2-9D8C-D2ACAB1CDD89}|Ch03Ex02LoopsAndOverflow\\Ch03Ex02LoopsAndOverflow.csproj|c:\\users\\nramsey-az\\desktop\\cs12dotnet8\\chapter03\\ch03ex02loopsandoverflow\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{351F59EE-7FB2-49B2-9D8C-D2ACAB1CDD89}|Ch03Ex02LoopsAndOverflow\\Ch03Ex02LoopsAndOverflow.csproj|solutionrelative:ch03ex02loopsandoverflow\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -52,18 +56,31 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter03\\Ch03Ex03Operators\\Program.cs",
+              "RelativeDocumentMoniker": "Ch03Ex03Operators\\Program.cs",
+              "ToolTip": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter03\\Ch03Ex03Operators\\Program.cs*",
+              "RelativeToolTip": "Ch03Ex03Operators\\Program.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T14:59:03.792Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter03\\Ch03Ex02LoopsAndOverflow\\Program.cs",
               "RelativeDocumentMoniker": "Ch03Ex02LoopsAndOverflow\\Program.cs",
-              "ToolTip": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter03\\Ch03Ex02LoopsAndOverflow\\Program.cs*",
-              "RelativeToolTip": "Ch03Ex02LoopsAndOverflow\\Program.cs*",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAFAAAA",
+              "ToolTip": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter03\\Ch03Ex02LoopsAndOverflow\\Program.cs",
+              "RelativeToolTip": "Ch03Ex02LoopsAndOverflow\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-11T14:31:13.21Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter03\\HandlingExceptions\\Program.cs",
               "RelativeDocumentMoniker": "HandlingExceptions\\Program.cs",
@@ -76,7 +93,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter03\\CastingConverting\\Program.cs",
               "RelativeDocumentMoniker": "CastingConverting\\Program.cs",
@@ -88,7 +105,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter03\\Arrays\\Program.cs",
               "RelativeDocumentMoniker": "Arrays\\Program.cs",
@@ -100,7 +117,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter03\\IterationStatements\\Program.cs",
               "RelativeDocumentMoniker": "IterationStatements\\Program.cs",
@@ -112,7 +129,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Animals.cs",
               "DocumentMoniker": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter03\\SelectionStatements\\Animals.cs",
               "RelativeDocumentMoniker": "SelectionStatements\\Animals.cs",
@@ -124,7 +141,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter03\\SelectionStatements\\Program.cs",
               "RelativeDocumentMoniker": "SelectionStatements\\Program.cs",
@@ -136,7 +153,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Operators.csproj",
               "DocumentMoniker": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter03\\Operators\\Operators.csproj",
               "RelativeDocumentMoniker": "Operators\\Operators.csproj",
@@ -148,7 +165,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\nramsey-az\\Desktop\\cs12dotnet8\\Chapter03\\Operators\\Program.cs",
               "RelativeDocumentMoniker": "Operators\\Program.cs",
