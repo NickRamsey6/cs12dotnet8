@@ -5,6 +5,9 @@
 
 ## Projects List
 * TopLevelFunctions
+* WritingFunctions
+* Debugging
+* HotReloading
 
 
 ## Practice Questions
