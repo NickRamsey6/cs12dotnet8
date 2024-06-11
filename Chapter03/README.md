@@ -75,7 +75,7 @@ The iterator variable is cast as a byte. Bytes have a max value of 255. The loop
 * Ch03Ex04FizzBuzz - Write FizzBuzz program using if/else if and modulo operands
 * Cho3Ex05Exceptions - Parse console input and catch any exceptions
 
-## My takeaways / Questions
+## My takeaways / Questions / Notes
 Exclamtion mark (!) is the null-forgiving operator. It disables the compiler warning and has no effect on runtime. Example:  
 ``` int age = int.Parse(input!); ```   
 Is it better to catch as many known/expected exceptions or should you just catch all and trust the built-in warnings?  

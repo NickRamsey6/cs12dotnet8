@@ -33,4 +33,4 @@
 * HelloCS - Writing to the console and trying out the Null Coalescing Operator
 * AboutMyEnvironment - Exploring namespaces
 
-## My Takeaways
+## My takeaways / Questions / Notes
