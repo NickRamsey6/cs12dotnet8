@@ -17,5 +17,57 @@ namespace Ch04Ex02PrimeFactorsTests
             // Assert
             Assert.Equal(expected, actual);
         }
+        [Fact]
+        public void TestPrimesOfFour()
+        {
+            // Arrange
+            int inputNumber = 4;
+            string expected = "2 x 2";
+
+            // Act
+            string actual = Primes.PrimeFactors(inputNumber);
+
+            // Assert
+            Assert.Equal(expected, actual);
+        }
+        [Fact]
+        public void TestPrimesOfThirty()
+        {
+            // Arrange
+            int inputNumber = 30;
+            string expected = "5 x 3 x 2";
+
+            // Act
+            string actual = Primes.PrimeFactors(inputNumber);
+
+            // Assert
+            Assert.Equal(expected, actual);
+        }
+        [Fact]
+        public void TestPrimesOfForty()
+        {
+            // Arrange
+            int inputNumber = 40;
+            string expected = "5 x 2 x 2 x 2";
+
+            // Act
+            string actual = Primes.PrimeFactors(inputNumber);
+
+            // Assert
+            Assert.Equal(expected, actual);
+        }
+        [Fact]
+        public void TestPrimesOfFifty()
+        {
+            // Arrange
+            int inputNumber = 50;
+            string expected = "5 x 5 x 2";
+
+            // Act
+            string actual = Primes.PrimeFactors(inputNumber);
+
+            // Assert
+            Assert.Equal(expected, actual);
+        }
     }
 }
