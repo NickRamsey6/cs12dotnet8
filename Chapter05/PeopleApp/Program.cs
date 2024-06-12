@@ -1,5 +1,5 @@
 ﻿using Packt.Shared; // To use Person
-
+# region Storing data in fields
 ConfigureConsole(); // Sets current culture to US English
 
 // Alternatives:
@@ -50,7 +50,7 @@ for (int childIndex = 0; childIndex < bob.Children.Count; childIndex++)
 }
 
 WriteLine("Here are Bob's children displayed using a foreach");
-foreach(Person child in bob.Children)
+foreach (Person child in bob.Children)
 {
     WriteLine($"> {child.Name}");
 }
@@ -60,7 +60,7 @@ Person alice = new()
 {
     Name = "Alice Jones",
     Born = new(1998, 3, 7, 16, 28, 0,
-        // This is an optional offset from UTC time zone.
+    // This is an optional offset from UTC time zone.
     TimeSpan.Zero)
 };
 
@@ -69,3 +69,32 @@ WriteLine(format: "{0} was born on {1:d}.", // d is short date format
 
 //WriteLine(bob); // Implicit call to ToString()
 // WriteLine(bob.ToString()); // Does the same thing
+#endregion
+
+#region Making a field static
+BankAccount.InterestRate = 0.012M; // Store a shared value in static field.
+
+BankAccount jonesAccount = new();
+jonesAccount.AccountName = "Mrs. Jones";
+jonesAccount.Balance = 2400;
+WriteLine(format: "{0} eared {1:C} interest.",
+    arg0: jonesAccount.AccountName,
+    arg1: jonesAccount.Balance * BankAccount.InterestRate);
+
+BankAccount gerrierAccount = new();
+gerrierAccount.AccountName = "Ms. Gerrier";
+gerrierAccount.Balance = 98;
+WriteLine(format: "{0} earned {1:C} interest.",
+    arg0: gerrierAccount.AccountName,
+    arg1: gerrierAccount.Balance * BankAccount.InterestRate);
+
+#endregion
+
+#region Making a field constant
+WriteLine($"{bob.Name} is a {Person.Species}.");
+#endregion
+
+#region Making a field read-only
+WriteLine($"{bob.Name} was born on {bob.HomePlanet}.");
+
+#endregion
