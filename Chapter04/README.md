@@ -19,6 +19,24 @@
 | [CallerLineNumber] int line = 0 | Sets the int parameter named *line* to the line number in the source code file of the statement that is executing this method that defines this parameter. |
 | [CallerArgumentExpression(nameof(argumentExpression))] string expression = "" | Sets the string parameter named expression to the expression that has been passed to the parameter named *argumentExpression*.
 
+## Types of Testing
+| Type | Description |
+| ------- | ----|
+| Unit | Tests the smallest unit of code, typically a method or function. Unit testing is performed on a unit of code isolated from its dependencies by mocking them if needed. Each unit should have multiple tests: some with typical inputs and expected outputs, some with extreme input values to test boundaries, and some with deliberately wrong inputs to test exception handling. |
+| Integration | Tests if the smaller units and larger components work together as a single piece of software. Sometimes involves integrating with external components for which you do not have source code. |
+| System | Tests the whole system environment in which your software will run. |
+| Performance | Tests the performace of your software; for example, your code must return a web page full of data to a visitor in under 20 milliseconds. |
+| Load | Tests how many requests your software can handle simultaneously while maintaining required performance, for example, 10,000 concurrent visitors to a website. |
+| User Acceptance | Tests if users can happily complete their work using your software. |
+
+## Common Guard Clauses
+| Exception | Guard Clause Methods |
+| ------- | ----|
+| ArgumentException | ThrowIfNullOrEmpty, ThrowIfNullOrWhiteSpace |
+| ArgumentNullException | ThrowIfNull |
+| ArgumentOutOfRange | ThrowIfEqual, ThrowIfGreaterThan, ThrowIfGreaterThanOrEqual, ThrowIfLessThan, ThrowIfLessThanOrEqual, ThrowIfNegative, ThrowIfNegativeOrZero, ThrowIfNotEqual, ThrowIfZero |
+
+
 
 ## Projects List
 * TopLevelFunctions
@@ -26,6 +44,7 @@
 * Debugging
 * HotReloading
 * Instrumenting
+* CalculatorLib
 
 
 ## Practice Questions
@@ -37,5 +56,6 @@
 ## My takeaways / Questions / Notes
 Nice to see how functions will display parameters and VisualStudio will help you use the functions correctly.  
 Watch out for silent overflow  
-Do we typically build a function then another function to call that function?
+Do we typically build a function then another function to call that function?  
+What unit testing framework do we use?
 

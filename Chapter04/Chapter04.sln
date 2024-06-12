@@ -3,15 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopLevelFunctions", "TopLevelFunctions\TopLevelFunctions.csproj", "{CBD41644-D214-440F-A5BA-8E2D3E4E0EED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TopLevelFunctions", "TopLevelFunctions\TopLevelFunctions.csproj", "{CBD41644-D214-440F-A5BA-8E2D3E4E0EED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WritingFunctions", "WritingFunctions\WritingFunctions.csproj", "{D0D56161-9547-4D1A-87FB-11A21AA4C171}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WritingFunctions", "WritingFunctions\WritingFunctions.csproj", "{D0D56161-9547-4D1A-87FB-11A21AA4C171}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Debugging", "Debugging\Debugging.csproj", "{7B467874-A898-4CF7-99C8-1D527F747C47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Debugging", "Debugging\Debugging.csproj", "{7B467874-A898-4CF7-99C8-1D527F747C47}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotReloading", "HotReloading\HotReloading.csproj", "{B4269DBE-C165-4C93-9371-67FA1854C6B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotReloading", "HotReloading\HotReloading.csproj", "{B4269DBE-C165-4C93-9371-67FA1854C6B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Instrumenting", "Instrumenting\Instrumenting.csproj", "{85A23555-AA9D-4BA1-83F9-92FE54C7948B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Instrumenting", "Instrumenting\Instrumenting.csproj", "{85A23555-AA9D-4BA1-83F9-92FE54C7948B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorLib", "CalculatorLib\CalculatorLib.csproj", "{36F834F5-7A24-440D-A0C4-19B1ED85E3E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorLibUnitTests", "CalculatorLibUnitTests\CalculatorLibUnitTests.csproj", "{3CE7D737-5FE6-46F8-A1BF-152D06A8283A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{85A23555-AA9D-4BA1-83F9-92FE54C7948B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{85A23555-AA9D-4BA1-83F9-92FE54C7948B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{85A23555-AA9D-4BA1-83F9-92FE54C7948B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36F834F5-7A24-440D-A0C4-19B1ED85E3E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36F834F5-7A24-440D-A0C4-19B1ED85E3E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36F834F5-7A24-440D-A0C4-19B1ED85E3E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36F834F5-7A24-440D-A0C4-19B1ED85E3E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CE7D737-5FE6-46F8-A1BF-152D06A8283A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CE7D737-5FE6-46F8-A1BF-152D06A8283A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CE7D737-5FE6-46F8-A1BF-152D06A8283A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CE7D737-5FE6-46F8-A1BF-152D06A8283A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
