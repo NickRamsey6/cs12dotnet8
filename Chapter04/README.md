@@ -1,6 +1,9 @@
 # Chapter 4 Summary
 
 ## Key Concepts
+* How to write reusable functions with input parameters and return values, in both an imperative and functional style.
+* How to use Visual Studio debugging and diagnostic features like logging and unit tests to identify and fix any bugs in them.
+* How to throw and catch exceptions in functions and understand the call stack.
 
 ## Trace Levels
 | Number | Word | Description |
@@ -45,9 +48,30 @@
 * HotReloading
 * Instrumenting
 * CalculatorLib
+* CallStackExceptionHandling
 
 
 ## Practice Questions
+1. What does the C# keyword *void* mean?  
+**Answer: void means the method does not return anything**  
+2. What are some differences between imperative and functional programming styles?  
+**Answer: Imperative programming means writing a sequence of statements that the runtime will execute step by step like a recipe. Functional programming is declarative and describes what you want to achieve instead of how, Functional programming makes all states immutable by default to avoid side effects.**  
+3. In VisualStudio what is the difference between F5, Ctrl+F5?  
+**Answer: F5 will save, compile, and run the project with the debugger attached. Ctrl+F5 will save, compile, and run the project without the debugger attached. Shift+F5 stops the debugger and running application. Ctrl+Shift+F5 restarts the application without the debugger attached.**
+4. Where does the Trace.WriteLine method write its output to?  
+**Answer: Any configured trace listener. By default this includes the terminal and command line but can be configured to a text file or custom listener.**
+5. What are the five trace levels?  
+**Answer: 0 - Off, 1 - Error, 2 - Warning, 3 - Info, and 4 - Verbose**  
+6. What is the difference between Debug and Trace classes?  
+**Answer: Debug logging is written only during development. When running with Release configuraion, only Trace will write to any Trace Listeners.**
+7. When writing a unit test, what are the three "A"s?  
+**Answer: Arrange, Act and Assert.**
+8. When writing a unit test using xUnit, which attribute must you decorate the test methods with?  
+**Answer: ```[Fact]```**
+9. What dotnet command executes xUnit tests?  
+**Answer: ```dotnet test```**  
+10. What statement should you use to rethrow a caught exception named ex without losing the stack trace?  
+**Answer: ```throw```**
 
 
 ## Practice Example Projects
