@@ -21,5 +21,6 @@
 
 
 ## My takeaways / Questions / Notes
+Building a project will compile the referenced dependencies and copy the class library.dll to the local bin folder.  
 
 
