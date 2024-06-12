@@ -74,7 +74,20 @@
 **Answer: ```throw```**
 
 
-## Practice Example Projects
+## Practice Example Project Setup
+1. Create a class library called Ch04Ex02PrimeFactorsLib public class Primes and public static string PrimeFactors method.
+2. Create a console app called Ch04Ex02PrimeFactorsApp
+3. Add project reference to the class library in Ch04Ex02PrimeFactorsApp.csproj file.
+4. Build console app Ch04Ex02PrimeFactorsApp
+5. In Ch04Ex02PrimeFactorsApp Program.cs add ```using Ch04Ex02PrimeFactorsLib;``` to top so we can use classes from there.
+6. Use class.method() in your program, i.e.: ```Primes.PrimeFactors(2);```
+7. Create xUnit Test Project called Ch04Ex02PrimeFactorsTests
+8. Rename test class to PrimeFactorsUnitTests.cs
+9. Set Project reference (same step as 3) > Project | Add Project Reference Ch04Ex02PrimeFactorsLab
+10. Write tests
+11. Build Test project
+12. Run Tests
+13. Debug, etc.
 
 
 ## My takeaways / Questions / Notes
