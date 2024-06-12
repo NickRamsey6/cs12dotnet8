@@ -57,5 +57,7 @@
 Nice to see how functions will display parameters and VisualStudio will help you use the functions correctly.  
 Watch out for silent overflow  
 Do we typically build a function then another function to call that function?  
-What unit testing framework do we use?
+What unit testing framework do we use?  
+Static methods are named as such because they are called by the static Main method.  
+Void lets you know that the method will not return a value.
 
