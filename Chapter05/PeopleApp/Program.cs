@@ -277,3 +277,18 @@ catch (Exception ex)
 }
 
 #endregion
+
+#region Using indexers
+
+sam.Children.Add(new() { Name = "Charlie", Born = new(2010, 3, 18, 0, 0, 0, TimeSpan.Zero) });
+
+sam.Children.Add(new() { Name = "Ellia", Born = new(2020, 12, 24, 0, 0, 0, TimeSpan.Zero) });
+
+// Get using the int indexer
+WriteLine($"Sam's first child is {sam[0].Name}.");
+WriteLine($"Sam's second child is {sam[1].Name}.");
+
+// Get using the string indexer
+WriteLine($"Sam's child named Ellia is {sam["Ellia"].Age} years old.");
+
+#endregion

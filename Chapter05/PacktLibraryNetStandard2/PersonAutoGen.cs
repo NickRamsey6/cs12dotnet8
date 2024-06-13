@@ -83,4 +83,28 @@ public partial class Person
     }
 
     #endregion
+
+    #region Indexers: Properties that use array syntax to access them
+
+    public Person this[int index]
+    {
+        get
+        {
+            return Children[index];
+        }
+        set
+        {
+            Children[index] = value;
+        }
+    }
+
+    public Person this[string name]
+    {
+        get
+        {
+            return Children.Find(p => p.Name == name);
+        }
+    }
+
+    #endregion
 }
