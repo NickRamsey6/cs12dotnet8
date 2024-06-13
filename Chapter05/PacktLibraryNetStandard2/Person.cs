@@ -1,7 +1,7 @@
 ﻿// All types in this file will be defined in this file-scoped namespace.
 namespace Packt.Shared;
 
-public class Person : object
+public partial class Person : object
 {
     #region Fields: Data or state for this person
 
@@ -39,6 +39,120 @@ public class Person : object
 
 
     #endregion
+
+    #region Methods: Actions the type can perform
+    public void WriteToConsole()
+    {
+        WriteLine($"{Name} was born on a {Born:dddd}.");
+    }
+
+    public string GetOrigin()
+    {
+        return $"{Name} was born on {HomePlanet}";
+    }
+
+    #endregion
+
+    #region Defining and passing parameters
+    public string SayHello()
+    {
+        return $"{Name} says 'Hello!'";
+    }
+
+    public string SayHello(string name)
+    {
+        return $"{Name} says 'Hello, {name}!'";
+    }
+
+
+    #endregion
+
+    #region Passing optional parameters
+    public string OptionalParameters(int count, string command = "Run!", double number = 0.0, bool active = true)
+    {
+        return string.Format(
+            format: "command is {0}, number is {1}, active is {2}",
+            arg0: command,
+            arg1: number,
+            arg2: active);
+    }
+
+    #endregion
+
+    #region passing parameters in and out of a method
+    public void PassingParameters(int w, in int x, ref int y, out int z)
+    {
+        // out parameters cannot have default and they must be initialized inside the method.
+        z = 100;
+
+        // Increment each parameter except the read-piny in parameter x
+        w++;
+        y++;
+        z++;
+
+        WriteLine($"In the method: w={w}, x={x}, y={y}, z={z}");
+    }
+
+
+    #endregion
+
+    #region Combining multiple returned values using tuples
+
+    // Method that returns a tuple: (string, int)
+    public (string, int) GetFruit()
+    {
+        return ("Apples", 5);
+    }
+
+    // Method that returns a tuple with named fields
+    public (string Name, int Number) GetNamedFruit()
+    {
+        return (Name: "Apples", Number: 5);
+    }
+
+    #endregion
+
+    #region Deconstructing other types uing tuples
+
+    // Deconstructors: Break down this object into parts.
+
+    public void Deconstruct(out string? name, out DateTimeOffset dob)
+    {
+        name = Name;
+        dob = Born;
+    }
+
+    public void Deconstruct(out string? name, out DateTimeOffset dob, out WondersOfTheAncientWorld fav)
+    {
+        name = Name;
+        dob = Born;
+        fav = FavoriteAncientWonder;
+    }
+
+    #endregion
+
+    #region local functions
+
+    // Method with a local function
+    public static int Factorial(int number)
+    {
+        if (number < 0)
+        {
+            throw new ArgumentException(
+                $"{nameof(number)} cannot be less than zero.");
+        }
+        return localFactorial(number);
+
+        int localFactorial(int localNumber) // local function
+        {
+            if (localNumber == 0) return 1;
+            return localNumber * localFactorial(localNumber - 1);
+        }
+    }
+
+    #endregion
+
+
 }
 
 
