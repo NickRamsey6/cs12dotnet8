@@ -331,3 +331,67 @@ foreach(Passenger passenger in passengers)
 }
 
 #endregion
+
+#region Init-only properties
+
+ImmutablePerson jeff = new()
+{
+    FirstName = "Jeff",
+    LastName = "Winger"
+};
+// Does not work b/c FirstName is immutable and can only be assigned in the object initializer
+// jeff.FirstName = "Geoff";
+
+#endregion
+
+#region Record Types
+
+ImmutableVehicle car = new()
+{
+    Brand = "Mazda MX-5 RF",
+    Color = "Soul Red Crystal Metallic",
+    Wheels = 4
+};
+ImmutableVehicle repaintedCar = car
+    with
+{ Color = "Polymetal Grey Metallic" };
+WriteLine($"Original car color was {car.Color}. ");
+WriteLine($"New car color is {repaintedCar.Color}");
+
+#endregion
+
+#region Equality of record types
+
+AnimalClass ac1 = new() { Name = "Rex" };
+AnimalClass ac2 = new() { Name = "Rex" };
+
+WriteLine($"ac1 == ac2: {ac1 == ac2}");
+
+AnimalRecord ar1 = new() { Name = "Rex" };
+AnimalRecord ar2 = new() { Name = "Rex" };
+
+WriteLine($"ar1 == ar2: {ar1 == ar2}");
+
+
+#endregion
+
+#region Positional data members in records
+
+ImmutableAnimal oscar = new(Name: "Oscar", Species: "Labrador");
+var (who, what) = oscar; // Calls the deconstruct method
+WriteLine($"{who} is a {what}");
+
+#endregion
+
+#region Primary constructor
+
+Headset vp = new( "Apple", "Vision Pro");
+WriteLine($"{vp.ProductName} is made by {vp.Manufacturer}");
+
+Headset holo = new();
+WriteLine($"{holo.ProductName} is made by {holo.Manufacturer}");
+
+Headset mq = new() { Manufacturer = "Meta", ProductName = "Quest 3" };
+WriteLine($"{mq.ProductName} is made by {mq.Manufacturer}");
+
+#endregion
