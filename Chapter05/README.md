@@ -26,6 +26,8 @@ Methods of a class can access properties/values of the class without needing to 
 Do we often write overloaded methods?  
 Why do we use DateTimeOffset?  
 Methods vs functions?  
+Lambda Expression  => Like anonymous functions, you dont need to specify the type of the value that you input, thus making it more flexible.  
+Why use private vs. public?  
 
 
 

@@ -7,7 +7,8 @@ public partial class Person : object
 
     public string? Name; // ? means it can be null
     public DateTimeOffset Born;
-    public WondersOfTheAncientWorld FavoriteAncientWonder;
+    // this has moved to PersonAutoGen.cs
+    //public WondersOfTheAncientWorld FavoriteAncientWonder;
     public WondersOfTheAncientWorld BucketList;
     public List<Person> Children = new();
 

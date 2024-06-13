@@ -18,9 +18,10 @@ bob.Born = new DateTimeOffset(
     hour: 16, minute: 28, second: 0,
     offset: TimeSpan.FromHours(-5)); // US Eastern Standard Time
 
+#region Storing a value using an enum type
 // Add Favorite Ancient Wonders for Bob
 
-bob.FavoriteAncientWonder = WondersOfTheAncientWorld.StatueOfZeusAtOlympia;
+bob.FavoriteAncientWonder = WondersOfTheAncientWorld.HangingGardensOfBabylon;
 
 bob.BucketList = WondersOfTheAncientWorld.HangingGardensOfBabylon | WondersOfTheAncientWorld.MausoleumAtHalicarnassus;
 
@@ -31,6 +32,8 @@ WriteLine(format: "{0}'s favorite wonder is {1}. Its integer is {2}.",
     arg1: bob.FavoriteAncientWonder,
     arg2: (int)bob.FavoriteAncientWonder);
 WriteLine($"{bob.Name}'s bucket list is {bob.BucketList}.");
+
+#endregion
 
 // Add children for Bob
 // Works with all versions of C#
@@ -237,6 +240,40 @@ try
 catch (Exception ex)
 {
     WriteLine($"{ex.GetType()} says: {ex.Message} number was {number}.");
+}
+
+#endregion
+
+#region Defining read-only properties
+
+Person sam = new()
+{
+    Name = "Sam",
+    Born = new(1969, 6, 25, 0, 0, 0, TimeSpan.Zero)
+};
+
+WriteLine(sam.Origin);
+WriteLine(sam.Greeting);
+WriteLine(sam.Age);
+
+#endregion
+
+#region Defining settable properties
+
+sam.FavoriteIceCream = "Chocolate Fudge";
+WriteLine($"Sam's favorite ice-cream flavor is {sam.FavoriteIceCream}");
+
+string color = "Red";
+
+try
+{
+    sam.FavoritePrimaryColor = color;
+    WriteLine($"Sam's favorite primary color is {sam.FavoritePrimaryColor}.");
+}
+catch (Exception ex)
+{
+    WriteLine("Tried to set {0} to '{1}': {2}",
+        nameof(sam.FavoritePrimaryColor), color, ex.Message);
 }
 
 #endregion
