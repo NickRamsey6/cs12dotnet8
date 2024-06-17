@@ -26,5 +26,6 @@
 ```public string? Name { get; set; }```  
 What do guard clauses really do? ```ArgumentNullException.ThrowIfNull();```  
 Can I get a definition of instance method? Or static method?  
-  
+Do we create ouw own interfaces often?  
+
 
