@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics.CodeAnalysis; // To use [SetsRequiredMembers].
 
-namespace Packt.Shared;
+//namespace Packt.Shared;
 
 public class Book
 {
