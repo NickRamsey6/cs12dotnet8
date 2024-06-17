@@ -87,11 +87,14 @@ WriteLine(format: "Key {0} has value: {1}",
     arg0: key,
     arg1: lookupIntString[key]);
 
-// Assign the method to the Shout delegate
+// Assign the method to the Shout event delegate
+// Harry_Shout is the method and Shout is the delegate
 harry.Shout += Harry_Shout;
+harry.Shout += Harry_Shout_2;
 
 // Call the poke method that eventually raises the Shout event
 harry.Poke();
 harry.Poke();
 harry.Poke();
 harry.Poke();
+
