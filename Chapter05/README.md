@@ -53,7 +53,7 @@ Building a project will compile the referenced dependencies and copy the class l
 Methods of a class can access properties/values of the class without needing to be passed in.  
 Do we often write overloaded methods?  
 Why do we use DateTimeOffset?  
-Methods vs functions?  
+Methods vs functions?  - Methods are actions that an object can perform, either on itself or on related objects. 
 Lambda Expression  => Like anonymous functions, you dont need to specify the type of the value that you input, thus making it more flexible.   
 Switch expression uses _ to represent its default branch.  
 
