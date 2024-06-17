@@ -143,3 +143,21 @@ WriteLine($"p1.Name: {p1.Name}, p2.Name: {p2.Name}");
 WriteLine($"p1.Name == p2.Name, {p1.Name == p2.Name}");
 
 #endregion
+
+#region Defining Struct types
+
+DisplacementVector dv1 = new(3, 5);
+DisplacementVector dv2 = new(-2, 7);
+DisplacementVector dv3 = dv1 + dv2;
+
+WriteLine($"({dv1.X}, {dv1.Y}) + ({dv2.X}, {dv2.Y}) = ({dv3.X}, {dv3.Y})");
+
+DisplacementVector dv4 = new();
+WriteLine($"({dv4.X}, {dv4.Y})");
+
+DisplacementVector dv5 = new(3, 5);
+WriteLine($"dv1.Equals(dv5): {dv1.Equals(dv5)}");
+// Cannot compare struct variables using ==
+WriteLine($"dv1 == dv5: {dv1 == dv5}");
+
+#endregion
