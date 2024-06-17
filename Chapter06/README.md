@@ -1,6 +1,14 @@
 # Chapter 6 Summary
 
 ## Key Concepts
+* Operators
+* Generic Types
+* Delegates and Events
+* Implementing Interfaces
+* Memory usage differences between Reference and Value types
+* Working with null values
+* Deriving and casting types using inheritance
+* Base and derived classes, how to override a type member, and using polymorphism
 
 ## Common Interfaces
 | Interface | Method(s) | Description |
