@@ -15,7 +15,7 @@
 3. What is .NET Standard and why is it important?  
 **Answer: .NET Standard defines API specifications for all .NET platforms. Following it allows for maximum code reuse. Needed for compatibility**
 4. Why can a programmer use different languages (C# and F#) to write apps that run on .NET?  
-**Answer: .NET compiles C# and F# code to intermediate language code. The IL code is then compiled to Just In Time code that can be run natively on a CPU by the Comman Language Runtime (CLR)**
+**Answer: .NET compiles C# and F# code to intermediate language code. The IL code is then compiled to Just In Time code that can be run natively on a CPU by the Common Language Runtime (CLR)**
 5. What is a top-level program and how do you access any command-line arguments?  
 **Answer: Top level programs do not explicitly define a Program class or Main method to access command-line arguments. You can type statements without the boilerplate code. Command line arguments are accessed via the console.**
 6. What is the name of the entry method of a .NET console app and how should it be explicitly declared if you are not using the top-level program feature?  

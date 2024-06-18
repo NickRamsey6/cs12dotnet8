@@ -10,7 +10,7 @@
 | Example | Type | Why |
 | ------- | ---- | ----|
 | Phone # | String| May include non numeric characters |
-| Height | Float or Double| Probably wont need to run eqaulity or arthimetic operations|
+| Height | Float or Double| Probably wont need to run equality or arithmetic operations|
 | Age | Int| Best performance|
 | Salary | Decimal| More precise for equality ops|
 | Book ISBN | String| Non-numeric chars/ uuid|
@@ -46,8 +46,8 @@
 3. What is the difference between verbatim string and interpolated string?  
 **Answer: verbatim (prefixed with @) and allows escape characters (\t). Interpolated (prefixed with $) enables embedded formatting**
 4. Why should you be careful when using float and double values?  
-**Answer: Floats and Doubles are not guranteed to be accurate when running equality comparisons - decimal is better here**
-5. How can you determine howmany bytes a type like double uses in memory?  
+**Answer: Floats and Doubles are not guaranteed to be accurate when running equality comparisons - decimal is better here**
+5. How can you determine how many bytes a type like double uses in memory?  
 **Answer: sizeof() operator - ```sizeof(double)```**
 6. When should you use the var keyword?  
 **Answer: Use var for declaring local variables that you are not specifying the type of**

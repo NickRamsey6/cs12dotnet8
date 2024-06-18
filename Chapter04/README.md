@@ -28,7 +28,7 @@
 | Unit | Tests the smallest unit of code, typically a method or function. Unit testing is performed on a unit of code isolated from its dependencies by mocking them if needed. Each unit should have multiple tests: some with typical inputs and expected outputs, some with extreme input values to test boundaries, and some with deliberately wrong inputs to test exception handling. |
 | Integration | Tests if the smaller units and larger components work together as a single piece of software. Sometimes involves integrating with external components for which you do not have source code. |
 | System | Tests the whole system environment in which your software will run. |
-| Performance | Tests the performace of your software; for example, your code must return a web page full of data to a visitor in under 20 milliseconds. |
+| Performance | Tests the performance of your software; for example, your code must return a web page full of data to a visitor in under 20 milliseconds. |
 | Load | Tests how many requests your software can handle simultaneously while maintaining required performance, for example, 10,000 concurrent visitors to a website. |
 | User Acceptance | Tests if users can happily complete their work using your software. |
 
@@ -63,7 +63,7 @@
 5. What are the five trace levels?  
 **Answer: 0 - Off, 1 - Error, 2 - Warning, 3 - Info, and 4 - Verbose**  
 6. What is the difference between Debug and Trace classes?  
-**Answer: Debug logging is written only during development. When running with Release configuraion, only Trace will write to any Trace Listeners.**
+**Answer: Debug logging is written only during development. When running with Release configuration, only Trace will write to any Trace Listeners.**
 7. When writing a unit test, what are the three "A"s?  
 **Answer: Arrange, Act and Assert.**
 8. When writing a unit test using xUnit, which attribute must you decorate the test methods with?  
