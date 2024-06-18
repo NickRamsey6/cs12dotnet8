@@ -29,6 +29,16 @@
 | ANE | ArgumentNullException | An exception thrown at runtime by a method, property, or indexer invocation when an argument or value is null, and when the business logic determines that it is not valid. |
 
 
+## Categories of Custom Types and Their Capabilities
+| Type | Instantiation | Inheritance | Equality | Memory |
+| ---- | --------------|-------------|----------|--------|
+| class | Yes | Single | Reference | Heap | 
+| sealed class | Yes | None | Reference | Heap |
+|abstract class | No | Single | Reference | Heap |
+| record or record class | Yes | Single | Value | Heap |
+| struct or record struct | Yes | None | Value | Stack |
+| interface | No | Multiple | Reference | Heap |
+
 ## Projects List
 * PacktLibrary - Defines the Person class and its methods
 * PeopleApp - Creates new people, marriages and weddings
@@ -44,7 +54,9 @@
 What do guard clauses really do? ```ArgumentNullException.ThrowIfNull();```  
 Can I get a definition of instance method? Or static method?  
 Do we create ouw own interfaces often?  
-**ASK ANDY:** pg 340 - enabling NRTs - what is going on with the constructors?  
+**ASK ANDY:** pg 340 - enabling NRTs - what is going on with the constructors?   
+Multiple inheritance vs. Single inheritance?  
+
 
 
 
