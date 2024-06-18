@@ -205,4 +205,20 @@ public class Person : IComparable<Person?>
     }
 
     #endregion
+
+    #region Inheriting Exceptions
+
+    public void TimeTravel(DateTime when)
+    {
+        if (when <= Born)
+        {
+            throw new PersonException("If you trael back in time to a date earlier than your own birth, then the universe will explode!");
+        }
+        else
+        {
+            WriteLine($"Welcome to {when:yyyy}!");
+        }
+    }
+
+    #endregion
 }
