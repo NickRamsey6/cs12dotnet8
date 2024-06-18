@@ -45,6 +45,26 @@
 * NullHandling - Creating nullable value types
 
 ## Practice Questions
+1. What is a delegate?  
+**Answer: A delegate is a type-safe method reference. They can be used to execute any method with a matching signature. Delegates contain the memory address of a method that must match the same signature as the delegate, enabling it to be called safely within the correct parameter types. Delegates allow you to implement events to send messages between different objects that do not need to know about each other.**  
+2. What is an event?  
+**Answer: Events are actions that can happen to an object. Events are built on delegates and provide a way of exchanging messages between objects. An event is a field that is a delegate with the ```event``` keyword applied. Multiple delegates can be combined but must use += and -= to do so.**
+3. How are a base class and a derived class related, and how can the derived class access the base class?  
+**Answer: Derived class (or sublcass) is a class that inherits from a base class (or superclass). Inside a derived class, you use the ```base``` keyword to access the class that the subclass inherits from.**  
+4. What is the difference between ```is``` and ```as``` operators?  
+**Answer: The ```is``` operator returns true if an object can be cast to the type, false if not. The ```as``` operator returns a reference to the object if an object can be cast to the type, and returns null if it cannot be cast.**
+5. Which keyword is used to prevent a class from being derived from or a method from being further overridden?  
+**Answer: ```sealed```**  
+6. Which keyword is used to prevent a class from being instantiated with the ```new``` keyword?  
+**Answer: ```abstract```**
+7. Which keyword is used to allow a member to be overridden?  
+**Answer: ```virtual```**
+8. What's the difference between a destructor and a deconstruct method?  
+**Answer: Destructor methods aka finalizer methods release resources and destroy objects in memory, they are called by .NET runtime. Deconstruct methods are used to access values stored inside objects.**
+9. What are the signatures of the constructors that all exceptions should have?  
+**Answer: (), (string message), and (string message, Exception innerException)**
+10. What is an extension method, and how do you define one?  
+**Answer: Extension methods make static methods from static classes appear to be one of the members of another type. You define which type you want to extend by prefixing the first parameter of that type in the method using the ```this``` keyword.**
 
 ## Practice Example Projects
 
@@ -55,7 +75,7 @@ What do guard clauses really do? ```ArgumentNullException.ThrowIfNull();```
 Can I get a definition of instance method? Or static method?  
 Do we create ouw own interfaces often?  
 **ASK ANDY:** pg 340 - enabling NRTs - what is going on with the constructors?   
-Multiple inheritance vs. Single inheritance?  
+Multiple inheritance vs. Single inheritance?  - Only interfaces support multiple inheritance
 
 
 
