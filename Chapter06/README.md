@@ -50,7 +50,7 @@
 2. What is an event?  
 **Answer: Events are actions that can happen to an object. Events are built on delegates and provide a way of exchanging messages between objects. An event is a field that is a delegate with the ```event``` keyword applied. Multiple delegates can be combined but must use += and -= to do so.**
 3. How are a base class and a derived class related, and how can the derived class access the base class?  
-**Answer: Derived class (or sublcass) is a class that inherits from a base class (or superclass). Inside a derived class, you use the ```base``` keyword to access the class that the subclass inherits from.**  
+**Answer: Derived class (or subclass) is a class that inherits from a base class (or superclass). Inside a derived class, you use the ```base``` keyword to access the class that the subclass inherits from.**  
 4. What is the difference between ```is``` and ```as``` operators?  
 **Answer: The ```is``` operator returns true if an object can be cast to the type, false if not. The ```as``` operator returns a reference to the object if an object can be cast to the type, and returns null if it cannot be cast.**
 5. Which keyword is used to prevent a class from being derived from or a method from being further overridden?  

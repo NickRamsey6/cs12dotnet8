@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PeopleApp", "PeopleApp\Peop
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NullHandling", "NullHandling\NullHandling.csproj", "{285AFE92-9CB9-4467-9EB0-B9EBF97A4350}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch06Ex02Inheritance", "Ch06Ex02Inheritance\Ch06Ex02Inheritance.csproj", "{75DACCD2-973D-4AE1-84C4-4DBD6851F3DE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{285AFE92-9CB9-4467-9EB0-B9EBF97A4350}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{285AFE92-9CB9-4467-9EB0-B9EBF97A4350}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{285AFE92-9CB9-4467-9EB0-B9EBF97A4350}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75DACCD2-973D-4AE1-84C4-4DBD6851F3DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75DACCD2-973D-4AE1-84C4-4DBD6851F3DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75DACCD2-973D-4AE1-84C4-4DBD6851F3DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75DACCD2-973D-4AE1-84C4-4DBD6851F3DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
