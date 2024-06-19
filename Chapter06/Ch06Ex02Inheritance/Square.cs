@@ -9,4 +9,10 @@ public class Square : Shape
         this.Width = side;
         this.Height = side;
     }
+
+    public new void FindArea(Square sq1)
+    {
+        //sq1.Area = sq1.Height * sq1.Height;
+        sq1.Area = sq1.Height * sq1.Height;
+    }
 }

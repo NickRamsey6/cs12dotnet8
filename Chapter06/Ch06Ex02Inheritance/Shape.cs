@@ -8,8 +8,8 @@ public class Shape
     public virtual double Area { get; set; }
 
     // NEED a method to set the Area property
-    public static double FindArea(float Height,  float Width)
+    public void FindArea(Shape s1)
     {
-        return Height * Width;
+        s1.Area = s1.Height * s1.Width;
     }
 }
