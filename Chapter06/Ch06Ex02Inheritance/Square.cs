@@ -2,17 +2,18 @@
 
 public class Square : Shape
 {
+    public virtual double Side { get; set; }
     public Square() { }
 
     public Square(double side)
     {
         this.Width = side;
         this.Height = side;
+        this.Side = side;
     }
 
-    public new void FindArea(Square sq1)
+    public void FindArea(Square sq1)
     {
-        //sq1.Area = sq1.Height * sq1.Height;
-        sq1.Area = sq1.Height * sq1.Height;
+        sq1.Area = Math.Pow(sq1.Side, 2);
     }
 }

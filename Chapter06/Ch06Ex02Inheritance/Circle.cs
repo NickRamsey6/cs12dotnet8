@@ -12,8 +12,8 @@ public class Circle : Shape
         this.Radius = radius;
     }
 
-    public new void FindArea(Circle c1)
+    public void FindArea(Circle c1)
     {
-        c1.Area = 3.14* (c1.Radius * c1.Radius);
+        c1.Area = Math.PI * (Math.Pow(c1.Radius, 2));
     }
 }
