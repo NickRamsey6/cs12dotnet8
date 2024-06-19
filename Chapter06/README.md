@@ -73,7 +73,7 @@
 ```public string? Name { get; set; }```  
 What do guard clauses really do? ```ArgumentNullException.ThrowIfNull();```  
 Can I get a definition of instance method? Or static method?  
-Do we create ouw own interfaces often?  
+Do we create our own interfaces often?  
 **ASK ANDY:** pg 340 - enabling NRTs - what is going on with the constructors?   
 Multiple inheritance vs. Single inheritance?  - Only interfaces support multiple inheritance
 
