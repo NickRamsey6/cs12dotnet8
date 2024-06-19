@@ -2,18 +2,24 @@
 
 public class Circle : Shape
 {
-    public virtual double Radius { get; set; }
-    public Circle() { }
-
+    // Define Circle-specific Radius property 
+    public double Radius { get; set; }
+    
+    // Circle constructor to initialize circle fields
     public Circle(double radius)
     {
-        this.Width = radius * 2;
-        this.Height = radius * 2;
-        this.Radius = radius;
+        Width = radius * 2;
+        Height = radius * 2;
+        Radius = radius;
     }
 
-    public void FindArea(Circle c1)
+    // Override the Shape Area with Circle-specific calculation
+    public override double Area
     {
-        c1.Area = Math.PI * (Math.Pow(c1.Radius, 2));
+        get
+        {
+            // Area = Pi * Radius ^2
+            return Math.PI * (Math.Pow(Radius, 2));
+        }
     }
 }

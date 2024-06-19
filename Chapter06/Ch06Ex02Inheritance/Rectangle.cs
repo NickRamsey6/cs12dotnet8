@@ -2,11 +2,20 @@
 
 public class Rectangle : Shape
 {
-    public Rectangle() { }
-
+    // Rectangle constructor to initialize Shape properties Height and width
     public Rectangle(double width, double height)
     {
-        this.Width = width;
-        this.Height = height;
+        Width = width;
+        Height = height;
+    }
+
+    // Override the Area field inherited from the Shape class with a rectangle-specific calculation for Area
+    public override double Area
+    {
+        get
+        {
+            // Area = L * W
+            return Width * Height;
+        }
     }
 }

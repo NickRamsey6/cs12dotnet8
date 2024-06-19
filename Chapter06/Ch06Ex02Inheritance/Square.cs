@@ -2,18 +2,27 @@
 
 public class Square : Shape
 {
-    public virtual double Side { get; set; }
-    public Square() { }
+    // Define Square-specific properties
+    private double Side { get; set; }
 
+    // Constructor to set paramter to accept side only
     public Square(double side)
     {
-        this.Width = side;
-        this.Height = side;
-        this.Side = side;
+        // Set the inherited fields w and h with the provided parameter
+        // Also set the Sqaure-Only Side field
+        Width = side;
+        Height = side;
+        Side = side;
     }
 
-    public void FindArea(Square sq1)
+    // Override Area field from Shape class, with Square-specific calculation
+    public override double Area
     {
-        sq1.Area = Math.Pow(sq1.Side, 2);
+        get
+        {
+            // Math.Pow is a power of function
+            // Area = s ^ 2
+            return Math.Pow(Side, 2);
+        }
     }
 }
