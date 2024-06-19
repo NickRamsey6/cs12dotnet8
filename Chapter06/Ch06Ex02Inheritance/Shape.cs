@@ -2,7 +2,7 @@
 
 public class Shape
 {
-    // Define shape properties
+    // Define shape properties with getter and setter methods
     public virtual double Height { get; set; }
     public virtual double Width { get; set; }
     public virtual double Area { get; set; }
