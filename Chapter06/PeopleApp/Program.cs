@@ -14,7 +14,10 @@ Person adah = new() { Name = "Adah" };
 Person zillah = new() { Name = "Zillah" };
 
 // Call the instance method to marry Lamech and Adah
-lamech.Marry(adah);
+//lamech.Marry(adah);
+var married = lamech + adah;
+WriteLine("Nick! Look here!");
+WriteLine(married);
 
 // Call the static method to marry Lamech and Zillah
 //Person.Marry(lamech, zillah);
@@ -271,5 +274,19 @@ s2.Name = "Bill";
 
 S3 s3 = new(Name: "Bob");
 //s3.Name = "Bill"; // CS8852: Init-only property
+
+#endregion
+
+#region Operators
+
+int a1 = 1;
+int b1 = 2;
+int res = a1 + b1;
+WriteLine(res);
+
+int p = 6;
+p += 3;
+WriteLine(p);
+
 
 #endregion
