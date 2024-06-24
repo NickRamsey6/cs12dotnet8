@@ -76,3 +76,71 @@ string key = "long";
 WriteLine($"The definition of {key} is {keywords[key]}.");
 
 #endregion
+
+#region Sets
+
+HashSet<string> names = new();
+
+foreach (string name in
+    new[] { "Adam", "Barry", "Charlie", "Barry" })
+{
+    bool added = names.Add(name);
+    WriteLine($"{name} was added: {added}.");
+}
+
+WriteLine($"names set: {string.Join(", ", names)}.");
+
+#endregion
+
+#region Queues
+
+Queue<string> coffee = new();
+
+coffee.Enqueue("Damir"); // Front of queue
+coffee.Enqueue("Andrea");
+coffee.Enqueue("Ronald");
+coffee.Enqueue("Amin");
+coffee.Enqueue("Irina"); // Back of queue
+
+OutputCollection("Initial queue from front to back", coffee);
+
+// Waiter handles next person in queue
+string served = coffee.Dequeue();
+WriteLine($"Served: {served}.");
+
+// Waiter handles next person in queue
+served = coffee.Dequeue();
+WriteLine($"Served: {served}.");
+OutputCollection("Current queue from front to back", coffee);
+
+WriteLine($"{coffee.Peek()} is next in line.");
+OutputCollection("Current queue from front to back", coffee);
+
+PriorityQueue<string, int> vaccine = new();
+
+// Add some people
+// 1 = High priority people in their 70's or poor health
+// 2 = Medium priority e.g. middle-aged
+// 3 = low priority e.g. teens and twenties
+
+vaccine.Enqueue("Pamela", 1);
+vaccine.Enqueue("Rebecca", 3);
+vaccine.Enqueue("Juliet", 2);
+vaccine.Enqueue("Ian", 1);
+
+OutputPQ("Current queue for vaccination", vaccine.UnorderedItems);
+
+WriteLine($"{vaccine.Dequeue()} has been vaccinated.");
+WriteLine($"{vaccine.Dequeue()} has been vaccinated.");
+OutputPQ("Current queue for vaccination", vaccine.UnorderedItems);
+
+WriteLine($"{vaccine.Dequeue()} has been vaccinated.");
+
+WriteLine($"Adding Mark to queue with priority 2.");
+vaccine.Enqueue("Mark", 2);
+
+WriteLine($"{vaccine.Peek()} will be next to be vaccinated.");
+OutputPQ("Current queue for vaccination", vaccine.UnorderedItems);
+
+
+#endregion

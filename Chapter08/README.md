@@ -52,6 +52,26 @@
 | System.Collections.Concurrent | BlockingCollection, ConcurrentDictionary, ConcurrentQueue | These collections are safe to use in multithreaded scenarios. |
 | System.Collections.Immutable | ImmutableArray, ImmutableDictionary ImmutableList, ImmutableQueue | Designed for scenarios where the contents of the original collection will never change, although they can create modified collections as a new instance. |
 
+## Common Set Methods
+| Method | Description |
+|--------|-------------|
+| Add | If the item does not already exist in the set, then it is added. Returns true if the item was added, false if it was already in the set. |
+| ExceptWith | Removes the items in the set passed as the parameter from the set. |
+| IntersectWith | Removes the items not in the set passed as the parameter and in the set. |
+| IsProperSubsetOf, IsProperSupersetOf, IsSubsetOf, IsSupersetOf | A subset is a set whose items are all in the other set but there is at least one item in the other set that is not in the set. A superset is a set that contains all the items in the other set. A proper superset is a set that contains all the items in the other set and at least one more not in the other set. |
+| Overlaps | The set and the other set share at least one common item. |
+| SetEquals | The set and the other set contain exactly the same items. |
+| SymmetricExceptWith | Removes the items not in the set passed as the parameter from the set and adds any that are missing. |
+| UnionWith | Adds any items in the set passed as the parameter to the set that are not already in the set. |
+
+## Collection Add and Remove Methods
+| Collection | "Add" Methods | "Remove" Methods | Description |
+|------------|---------------|------------------|-------------|
+| List | Add, Insert | Remove, RemoveAt | Lists are ordered so items have an integer index position. Add will add a new item at the end of the list. Insert will add a new item at the index position specified. |
+| Dictionary | Add | Remove | Dictionaries are not ordered so items do not have integer index positions. You can check if a key has been used by calling the ContainsKey method. |
+| Stack | Push | Pop | Stacks always add a new item at the top of the stack using the Push method. The first item is at the bottom. Items are always removed from the top of the stack using the Pop method. Call the Peek method to see this value without removing it. Stacks are LIFO. |
+| Queue | Enqueue | Dequeue | Queues always add a new item at the end of the queue using the Enqueue method. The first item is at the front of the queue. Items are always removed from the front of the queue using the Dequeue method. Call the Peek method to see this value without removing it. Queues are FIFO. | 
+
 ## Projects List
 * WorkingWithNumbers
 * WorkingWithText
