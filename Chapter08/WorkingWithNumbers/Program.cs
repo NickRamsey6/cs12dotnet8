@@ -1,5 +1,6 @@
 ﻿using System.Numerics; // To use BigInteger
 
+
 #region Working with big integers
 
 const int width = 40;
@@ -90,3 +91,4 @@ for (int i = 0; i < guidAsBytes.Length; i++)
 WriteLine();
 
 #endregion
+
