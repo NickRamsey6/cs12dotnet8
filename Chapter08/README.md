@@ -33,6 +33,17 @@
 | string.IsNullOrWhiteSpace | This checks whether a string variable is null or whitespace; that is a mix of any number of horizontal and vertical spacing characters, for example, tab, space, carriage return, line feed, and so on. |
 | string.Format | An alternative method to string interpolation for outputting formatted string values, which uses positioned instead of named parameters. |
 
+## Common Regex Symbols
+| Symbol | Meaning | Symbol | Meaning |
+|--------|---------|--------|---------|
+| ^ | Start of input | $ | End of input |
+| \d | A single digit | \D | A single non-digit |
+| \s | Whitespace | \S | Non-whitespace |
+| \w | Word characters | \W | Non-word characters |
+| [A-Za-z0-9] | Range of characters | \^ | ^ (caret) character |
+| [aeiou] | Set of characters | [^aeiou] | Not in a set of characters |
+| . | Any single character | \. | .(dot) character |
+
 ## Projects List
 * WorkingWithNumbers
 * WorkingWithText
