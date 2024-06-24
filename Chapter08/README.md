@@ -44,6 +44,14 @@
 | [aeiou] | Set of characters | [^aeiou] | Not in a set of characters |
 | . | Any single character | \. | .(dot) character |
 
+## Common Collection Types
+| Namespace | Example type(s) | Description |
+|-----------|-----------------|-------------|
+| System.Collections | IEnumerable, IEnumerable<<T>T> | Interfaces and base classes used by collections. |
+| System.Collections.Generic | List<<T>T>, Dictionary<<T>T>, Queue<<T>T>, Stack<<T>T> | These collections allow you to specify the tpe you want to store using a generic type parameter (which is safer, faster and more efficient). |
+| System.Collections.Concurrent | BlockingCollection, ConcurrentDictionary, ConcurrentQueue | These collections are safe to use in multithreaded scenarios. |
+| System.Collections.Immutable | ImmutableArray, ImmutableDictionary ImmutableList, ImmutableQueue | Designed for scenarios where the contents of the original collection will never change, although they can create modified collections as a new instance. |
+
 ## Projects List
 * WorkingWithNumbers
 * WorkingWithText
