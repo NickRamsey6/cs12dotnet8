@@ -66,15 +66,9 @@
 10. What is an extension method, and how do you define one?  
 **Answer: Extension methods make static methods from static classes appear to be one of the members of another type. You define which type you want to extend by prefixing the first parameter of that type in the method using the ```this``` keyword.**
 
-## Practice Example Projects
-
 ## My takeaways / Questions / Notes
 ? declares a property as nullable? Tell compiler we are expecting a possible null value  
-```public string? Name { get; set; }```  
-What do guard clauses really do? ```ArgumentNullException.ThrowIfNull();```  
-Can I get a definition of instance method? Or static method?  
-Do we create our own interfaces often?  
-**ASK ANDY:** pg 340 - enabling NRTs - what is going on with the constructors?   
+```public string? Name { get; set; }```   
 Multiple inheritance vs. Single inheritance?  - Only interfaces support multiple inheritance
 
 
