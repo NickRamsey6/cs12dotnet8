@@ -72,9 +72,18 @@
 | Stack | Push | Pop | Stacks always add a new item at the top of the stack using the Push method. The first item is at the bottom. Items are always removed from the top of the stack using the Pop method. Call the Peek method to see this value without removing it. Stacks are LIFO. |
 | Queue | Enqueue | Dequeue | Queues always add a new item at the end of the queue using the Enqueue method. The first item is at the front of the queue. Items are always removed from the front of the queue using the Dequeue method. Call the Peek method to see this value without removing it. Queues are FIFO. | 
 
+## Common Auto-Sorting Collections
+| Collection | Description |
+|------------|-------------|
+| SortedDictionary<TKey, TValue> | This represents a collection of key/value pairs that are sorted by key. Internally it maintains a binary tree for items. |
+| SortedList<TKey, TValue> | This represents a collection of key-value pairs that are sorted by key. The name is misleading because this is not a list. Compared to SortedDictionary<TKey, TValue>, retrieval performance is similar, it uses less memory, and insert and remove operations are slower for unsorted data. If it is populated from sorted data, then it is faster. Internally, it maintains a sorted array with binary search to find elements. |
+| SortedSet<T<T>> | This represents a collection of unique objects that are maintained in a sorted order. |
+
 ## Projects List
 * WorkingWithNumbers
 * WorkingWithText
+* WorkingWithRegularExpressions
+* WorkingWithCollections
 
 ## Practice Questions
  
