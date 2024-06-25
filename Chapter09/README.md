@@ -47,6 +47,16 @@
 | System.Xml | XmlReader | This reads from the underlying stream using the XML format. |
 | System.Xml | XmlWriter | This writes to the underlying stream using the XML format. |
 
+## Common Text Encodings
+| Encoding | Description |
+|----------|-------------|
+| ASCII | This encodes a limited range of characters using the lower seven bits of a byte. |
+| UTF-8 | This represents each Unicode code point as a sequence of one to four bytes. |
+| UTF-7 | This is designed to be more efficient over 7-bi channels than UTF-8 but it has security and robustness issues, so UTF-8 is recommended over UTF-7. |
+| UTF-16 | This represents each Unicode code point as a sequence of one or two 16-bit integers. |
+| UTF-32 | This represents each Unicode code point as a 32-bit integer and is, therefore, a fixed-length encoding unlike the other Unicode encodings, which are all variable-length encodings. |
+| ANSI/ISO encodings | This provides support for a variety of code pages that are used to support a specific language or group of languages. |
+
 
 ## Projects List
 * WorkingWithFileSystem
