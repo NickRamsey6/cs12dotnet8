@@ -89,6 +89,7 @@
 * WorkingWithRegularExpressions
 * WorkingWithCollections
 * WorkingWithRanges
+* Ch08Ex02RegularExpressions
 
 ## Practice Questions
 1. What is the maximum number of characters that can be stored in a string variable?  
