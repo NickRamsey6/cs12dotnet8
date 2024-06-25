@@ -50,6 +50,7 @@
 
 ## Projects List
 * WorkingWithFileSystem
+* WorkingWithStreams
 
 ## Practice Questions
  
