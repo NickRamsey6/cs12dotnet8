@@ -1,6 +1,10 @@
 # Chapter 8 Summary
 
 ## Key Concepts
+* Choices for types to store and manipulate numbers
+* Handling text, including using regular expressions for validating input
+* Collections to use for storing multiple items
+* Working with indexes, ranges, and spans
 
 ## Common .NET Number Types
 | Namespace | Example Type(s) | Description |
@@ -84,7 +88,34 @@
 * WorkingWithText
 * WorkingWithRegularExpressions
 * WorkingWithCollections
+* WorkingWithRanges
 
 ## Practice Questions
+1. What is the maximum number of characters that can be stored in a string variable?  
+**Answer: Max size of a string is 2 GB, or 1 billion characters. Each character uses 2 bytes due to the internal use of Unicode (UTF-16) encoding for characters in a string.**
+2. When and why should you use a SecureString type?  
+**Answer: SecureString encrypts its text and ensures that the memory is released immediately. Good for working with passwords.**
+3. When is it appropriate to use a StringBuilder class?  
+**Answer: When concatenating more than three string variables. Also StringBuilder allows you to modify a string variable without creating a new record in memory.**
+4. When should you use a LinkedList<T<T>> class?  
+**Answer: Use a LinkedList when you want to reference the previous and next items in the list. Use when items need to be inserted and removed from positions in the list without moving items in memory.**
+5. When should you use a SortedDictionary<T<T>> class rather than a SortedList<T<T>> class?  
+**Answer: SortedList<T<T>> class uses less memory than SortedDictionary<T<T>>. SortedDictionary<T<T>> has faster insertion and removal operations for unsorted data. If list is populated all at one from sorted data, SortedList<T<T>> is faster.**
+6. In a regular expression, what does $ mean?  
+**Answer: $ represents the end of the input.**
+7. In a regular expression, how can you represent digits?  
+**Answer: \d represents digits. So does [0-9]**
+8. Why should you not use the official standard for email addresses to create a regular expression to validate a user's email address?  
+**Answer: The effort is not worth the pain of the users. The official specification does not check whether that address exists or whether the person entering it is the owner.**
+9. What characters output when the following code runs?  
+```
+string city = "Aberdeen";
+ReadOnlySpan<char> citySpan = city.AsSpan()[^5..^0];
+WriteLine(citySpan.ToString());
+```
+**Answer: rdeen. ^5.. means the range is 5 characters long. ..^0 means the range ends zero characters in from the right end.**   
+10. How could you check that a web service is available before calling it?  
+**Answer: Use the ping class.**
+
  
 ## My takeaways / Questions / Notes
