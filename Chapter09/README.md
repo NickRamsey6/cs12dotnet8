@@ -57,13 +57,23 @@
 | UTF-32 | This represents each Unicode code point as a 32-bit integer and is, therefore, a fixed-length encoding unlike the other Unicode encodings, which are all variable-length encodings. |
 | ANSI/ISO encodings | This provides support for a variety of code pages that are used to support a specific language or group of languages. |
 
+## Methods to Work With Environment Variables
+| Method | Description |
+|--------|-------------|
+| GetEnvironmentVariables | Returns an IDictionary of all environment variables at a specified scope level or for the current process by default. |
+| GetEnvironmentVariable | Returns the value for a named environment variable. |
+| SetEnvironmentVariable | Sets the value for a named environment variable. |
+| ExpandEnvironmentVariables | Converts any environment variables in a string to their values identified with %%. For example, "My computer is named %COMPUTER_NAME%". |
+
 
 ## Projects List
 * WorkingWithFileSystem
 * WorkingWithStreams
 * WorkingWithRandomAccess
 * WorkingWithEncodings
-* WorkingWithSerial
+* WorkingWithSerialization
+* ControllingJson
+* WorkingWithEnvVars
 
 ## Practice Questions
  
