@@ -30,7 +30,7 @@
 1. What is the difference between a namespace and an assembly?  
 **Answer: Namespace is the address of a type. Assembly is where a type is stored in the filesystem. To use the type, must reference its assembly. Or can import its namespace or specify the namespace when specifying the type.**
 2. How do you reference another project in a .csproj file?  
-**Answer: By adding a <Project Referance<Project Reference>> element that sets the Include attribute to a path to the reference project file inside an ItemGroup element.**
+**Answer: By adding a <Project Reference<Project Reference>> element that sets the Include attribute to a path to the reference project file inside an ItemGroup element.**
 3. What is the benefit of a tool like ILSpy?  
 **Answer: ILSpy can let you see how other packages are written. Can also help you understand how third-party libraries should be used. ILSpy lets you decompile code.**
 4. Which .NET type does the C# float alias represent?  

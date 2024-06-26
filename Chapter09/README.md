@@ -105,3 +105,4 @@
 **Answer: nuget.org**
  
 ## My takeaways / Questions / Notes
+Things I missed on bonus exercise: Setting the property as READONLY, and Adding the [XmlInclude(typeof(circle))] fields 
