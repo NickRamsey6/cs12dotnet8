@@ -93,5 +93,15 @@
 **Answer: DeflateStream implements the same compression algorithm as GZIP, but without a cyclical redundancy check. It produces smaller compressed file but no integrity checks are performed when decompressing.**
 5. How many bytes per character does UTF-8 encoding use?  
 **Answer: 1-4 bytes**
+6. What is an object graph?  
+**Answer: An object graph is the structure of multiple objects that are related to each other, either through direct reference or indirectly through a chain of references.**
+7. What is the best serialization format to choose to minimize space requirements?  
+**Answer: JSON**
+8. What is the best serialization format for cross-platform compatibility?  
+**Answer: XML**
+9. Why is it bad to use a string value like "\Code\Chapter01" to represent a path? What should you use instead?  
+**Answer: This is bad because different operating systems uses \ and some use /. Instead, you should use Path.Combine. ```string path = Path.Combine(new[] { "Code", "Chapter01" });```**
+10. Where can you find information about NuGet packages and their dependencies?  
+**Answer: nuget.org**
  
 ## My takeaways / Questions / Notes
