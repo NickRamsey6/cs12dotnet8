@@ -61,6 +61,9 @@
 ## Projects List
 * WorkingWithFileSystem
 * WorkingWithStreams
+* WorkingWithRandomAccess
+* WorkingWithEncodings
+* WorkingWithSerial
 
 ## Practice Questions
  
