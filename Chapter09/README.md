@@ -1,6 +1,13 @@
 # Chapter 9 Summary
 
 ## Key Concepts
+* Read from and write to text files
+* Read from and write to XML files
+* Compress and decompress files
+* Encode and decode text
+* Serialize an object graph into JSON and XML
+* Deserialize an object graph from JSON and XML
+* Work with Environment Variables
 
 ## Classes to Get Info About Files and Directories
 | Class | Member |
@@ -76,5 +83,15 @@
 * WorkingWithEnvVars
 
 ## Practice Questions
+1. What is the difference between File class and FileInfo class?  
+**Answer: *File* class has static methods and it cannot be instantiated. Best for one-off tasks like copying a file. *FileInfo* requires instantiation of an object that represents a file. Best used for performing multiple operations on the same file.**
+2. What is the difference between the ReadByte method and Read method of a stream?  
+**Answer: The *Read* method reads a specified number of bytes from the stream into a byte array and advances position. The *ReadByte* method reads the next byte from the stream and advances position.**
+3. When would you use the StringReader, TextReader, and StreamReader classes?  
+**Answer: *StringReader* is used for reading from a string stored in memory. *TextReader* is used for reading the text from a file. *StreamReader* is used for reading strings for a stream that can be any type of text file.**
+4. What does the DeflateStream type do?  
+**Answer: DeflateStream implements the same compression algorithm as GZIP, but without a cyclical redundancy check. It produces smaller compressed file but no integrity checks are performed when decompressing.**
+5. How many bytes per character does UTF-8 encoding use?  
+**Answer: 1-4 bytes**
  
 ## My takeaways / Questions / Notes
