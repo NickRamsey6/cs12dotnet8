@@ -6,3 +6,8 @@
 
 ConfigureConsole();
 QueryingCategories();
+FilteredIncludes();
+QueryingProducts();
+GettingOneProduct();
+QueryingWithLike();
+GetRandomProduct();

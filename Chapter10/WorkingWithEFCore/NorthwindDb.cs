@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore; // To use DbContext and so on
+﻿using Microsoft.EntityFrameworkCore.Diagnostics; // To use RelationalEventId
+using Microsoft.EntityFrameworkCore; // To use DbContext and so on
 
 namespace Northwind.EntityModels;
 
@@ -18,6 +19,14 @@ public class NorthwindDb : DbContext
         string connectionString = $"Data Source={path}";
         WriteLine($"Connection: {connectionString}");
         optionsBuilder.UseSqlite(connectionString);
+
+        optionsBuilder.LogTo(WriteLine, // This is the console method
+            new[] { RelationalEventId.CommandExecuting } )
+#if DEBUG
+            .EnableSensitiveDataLogging() // Include SQL parameters
+            .EnableDetailedErrors()
+#endif
+        ;
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -37,5 +46,9 @@ public class NorthwindDb : DbContext
                 .Property(product => product.Cost)
                 .HasConversion<double>();
         }
+
+        // A global filter to remove discontinued products
+        modelBuilder.Entity<Product>()
+            .HasQueryFilter(p => !p.Discontinued);
     }
 }
