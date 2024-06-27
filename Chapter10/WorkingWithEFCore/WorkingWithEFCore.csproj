@@ -12,5 +12,17 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
+	<ItemGroup>
+		<Using Include="System.Console" Static="true"/>
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Version="8.0.0" Include="Microsoft.EntityFrameworkCore.Design">
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Version="8.0.0" Include="Microsoft.EntityFrameworkCore.Sqlite" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Northwind.EntityModels\Northwind.EntityModels.csproj" />
+	</ItemGroup>
 
 </Project>
