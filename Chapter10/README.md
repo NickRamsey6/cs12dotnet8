@@ -22,6 +22,7 @@
 ## Projects List
 * WorkingWithEFCore
 * Northwind.EntityModels
+* CoursesAndStudents - Code First EF Core Model
 
 ## Practice Questions
 1. What type would you use for a property that represents a table, for example, the Products property of a database context?  

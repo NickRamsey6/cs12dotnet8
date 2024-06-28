@@ -1,4 +1,4 @@
-# Chapter 9 Summary
+# Chapter 9 Working with Files, Streams, and Serialization
 
 ## Key Concepts
 * Read from and write to text files

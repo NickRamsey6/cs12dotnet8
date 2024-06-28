@@ -1,4 +1,4 @@
-# Chapter 3 Summary
+# Chapter 3 Controlling Flow, Converting Types, and Handling Exceptions
 
 ## Key Concepts
 * Use operators to perform simple tasks

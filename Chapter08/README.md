@@ -1,4 +1,4 @@
-# Chapter 8 Summary
+# Chapter 8 Working with Common .NET Types
 
 ## Key Concepts
 * Choices for types to store and manipulate numbers

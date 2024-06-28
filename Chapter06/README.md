@@ -1,4 +1,4 @@
-# Chapter 6 Summary
+# Chapter 6 Implementing Interfaces and Inheriting Classes
 
 ## Key Concepts
 * Operators

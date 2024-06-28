@@ -1,4 +1,4 @@
-# Chapter 7 Summary
+# Chapter 7 Packaging and Distributing .NET Types
 
 ## Key Concepts
 * Journey of .NET 8 for BCL Functionality

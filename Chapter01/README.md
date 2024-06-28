@@ -1,4 +1,4 @@
-# Chapter 1 Summary
+# Chapter 1 Hello, C#! Welcome, .NET!
 
 ## Key Concepts
 * Set up your development environment

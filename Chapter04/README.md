@@ -1,4 +1,4 @@
-# Chapter 4 Summary
+# Chapter 4 Writing, Debugging, and Testing Functions
 
 ## Key Concepts
 * How to write reusable functions with input parameters and return values, in both an imperative and functional style.

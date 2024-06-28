@@ -1,4 +1,4 @@
-# Chapter 2 Summary
+# Chapter 2 Speaking C#
 
 ## Key Concepts
 * Declare variables with specified or inferred types

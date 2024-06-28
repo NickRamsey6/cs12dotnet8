@@ -1,4 +1,4 @@
-# Chapter 5 Summary
+# Chapter 5 Building Your Own Types with Object-Oriented Programming
 
 ## Key Concepts
 * Making your own types using OOP
