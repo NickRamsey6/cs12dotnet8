@@ -27,4 +27,3 @@
 
 ## My takeaways / Questions / Notes
 Do we just come up with namespace names?  
-Do we use the scaffolding command or do we create our models manually?
