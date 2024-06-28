@@ -1,6 +1,11 @@
 # Chapter 10 Working with Data Using Entity Framework Core
 
 ## Key Concepts
+* Connect to and build entity data models for an existing database
+* Execute a simple LINQ query and process the results
+* Use Filtered Includes
+* Control loading and tracking patterns
+* Add, modify and delete data
 
 ## EF Core Annotation Attributes
 | Attribute | Description |
