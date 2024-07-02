@@ -71,7 +71,10 @@
 5. In .csproj file: Import System.Console, EF Core and SQLite client and Build project
 6. Create classes: NorthwindDb.cs and Customers.cs
 7. Setup Customers.cs first
-
+8. Just need to create the Customer class and define the properties we want
+9. Setup NorthwindDb.cs
+10. Create the NorthwindDb class. Setup an OnConfiguring method that will connect to SQLite db
+11. In Program.cs target the namespace and instantiate a db context instance. Then can query as needed.
 
 
 
