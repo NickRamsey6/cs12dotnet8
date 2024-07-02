@@ -1,6 +1,13 @@
 # Chapter 11 Querying and Manipulating Data Using LINQ
 
 ## Key Concepts
+* Selecting just the properties of an item you need
+* Filtering items based on conditions
+* Sorting items
+* Projecting items into different types
+* Joining and grouping items
+* Aggregating items
+
 
 ## LINQ Extension Methods
 | Method(s) | Description |
@@ -81,3 +88,90 @@
 
 ## My takeaways / Questions / Notes
 Lambda Expression: is a nameless function.  => (goes to)
+
+**Selecting** Just the Properties of an item you need:  
+Simple Select:
+```
+IQueryable<string> distinctCities = db.Customers.Select(c => c.City).Distinct()!;
+```
+More verbose:
+```
+var listOfItems = sortedAndFilteredItems
+    .Select(item => new
+    {
+        item.ItemId,
+        item.ItemName,
+        item.ItemPrice
+    });
+```
+
+**Filtering** items based on conditions AND sorting:  
+Simple Filter:
+```
+IQueryable<Customer> customersInCity = db.Customers.Where(c => c.City == 'Seattle');
+```
+More verbose
+```
+IQueryable<Product> filteredProducts =
+    allProducts.Where(product => product.Price < 10M);
+
+IOrderedQueryable<Product> sortedAndFilteredProducts =
+    filteredProducts.OrderByDescending(product => product.Price);
+```
+
+**Projecting** items into different types (Projecting to an Anonymous type):
+```
+var projectedProducts = sortedAndFilteredProducts
+    .Select(product => new
+    {
+        product.ProductId,
+        product.ProductName,
+        product.UnitPrice
+    });
+```
+**Joining and Grouping Items:**  
+**Join** - Requires:
+1. The sequence you want to join with
+2. The property/properties on the LEFT sequence to match on
+3. The property/properties on the RIGHT sequence to match on
+4. A projection  
+
+```
+// Join every product to its category and return 77 matches
+var queryJoin = db.Categories.Join(
+    inner: db.Products,
+    outerKeySelector: category => category.CategoryId,
+    innerKeySelector: product => product.CategoryId,
+    resultSelector: (c, p) =>
+        new { c.CategoryName, p.ProductName, p.ProductId }
+);
+```
+
+**GroupJoin** - Requires the same params as above but it combines the matches into a group object with a key property for the matching value and an IEnumerable type for multiple matches  
+```
+// Group all products by their category to return 8 matches
+var queryGroup = db.Categories.AsEnumerable().GroupJoin(
+    inner: db.Products,
+    outerKeySelector: category => category.CategoryId,
+    innerKeySelector: product => product.CategoryId,
+    resultSelector: (c, matchingProducts) => new
+    {
+        c.CategoryName,
+        Products = matchingProducts.OrderBy(p => p.ProductName)
+    }
+);
+```
+
+**ToLookup** - Creates a new data structure with the sequence grouped by a key
+```
+ILookup<string, Product> productLookup = productQuery.ToLookup(
+    keySelector: cp => cp.CategoryName,
+    elementSelector: cp => cp.Product
+);
+```  
+**Aggregating Items:**  
+Example methods: Max, Min, Count, LongCount, Average, Sum, and Aggregate
+```
+// Sum of units in stock
+db.Products.Sum(p => p.UnitsOnOrder),10:N0
+```
