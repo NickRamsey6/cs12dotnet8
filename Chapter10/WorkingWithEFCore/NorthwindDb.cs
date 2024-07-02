@@ -33,7 +33,7 @@ public class NorthwindDb : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        // Eample of using Fluent API instead of attributes
+        // Example of using Fluent API instead of attributes
         // to limit the length of a category name to 15
         modelBuilder.Entity<Category>()
             .Property(category => category.CategoryName)

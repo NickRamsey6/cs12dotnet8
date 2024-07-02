@@ -40,6 +40,7 @@
 ## Projects List
 * LinqWithObjects
 * LinqWithEFCore
+* Ch11Ex02LinqQueries
 
 ## Practice Questions
 1. What are the two required parts of LINQ?  
@@ -62,6 +63,18 @@
 **Answer: Because it is just syntactic sugar. Makes the code easier for humans to read.**
 10. How can you create your own LINQ extension methods?  
 **Answer: Create a static class with a static method, with an IEnumberable parameter prefixed with the ```this``` keyword.**
+
+## Exercise 11.2 - Practice Querying With LINQ
+1. File | Add > New Project > ConsoleApp Ch11Ex02LinqQueries
+2. Copy Northwind4SQLite.sql script from main repo to Project directory
+3. Run sql script to build Northwind db
+5. In .csproj file: Import System.Console, EF Core and SQLite client and Build project
+6. Create classes: NorthwindDb.cs and Customers.cs
+7. Setup Customers.cs first
+
+
+
+
 
 ## My takeaways / Questions / Notes
 Lambda Expression: is a nameless function.  => (goes to)
