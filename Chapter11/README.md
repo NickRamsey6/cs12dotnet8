@@ -39,6 +39,7 @@
 
 ## Projects List
 * LinqWithObjects
+* LinqWithEFCore
 
 ## My takeaways / Questions / Notes
 Lambda Expression: is a nameless function.  => (goes to)
