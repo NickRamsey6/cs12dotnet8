@@ -41,5 +41,27 @@
 * LinqWithObjects
 * LinqWithEFCore
 
+## Practice Questions
+1. What are the two required parts of LINQ?  
+**Answer: Extension Methods and LINQ Providers. Must also import System.LINQ namespace to make all LINQ extension methods available and reference a LINQ provider assembly for the type of data you are working with.**
+2. Which LINQ extension method would you use to return a subset of properties from a type?  
+**Answer: Select**
+3. Which LINQ extension method would you use to filter a sequence?  
+**Answer: Where**
+4. List five LINQ extension methods that perform aggregation.  
+**Answer: Aggregate, Sum, Average, Count, Max, Min**
+5. What is the difference between Select and SelectMany extension methods?  
+**Answer: Select returns exactly what you specify to return. SelectMany checks the items you have selected are IEnumerable and then breaks them down into smaller parts. With a string, SelectMany would break it down into its individual char values and combine them into a single sequence.**
+6. What is the difference between IEnumerable<T<T>> and IQueryable<T<T>>? How do you switch between them?  
+**Answer: IEnumerable indicates a LINQ provider that will execute the query locally like LINQ to Objects. IQueryable indicates a LINQ provider that first builds an expression tree to represent the query and then converts it into another query syntax before executing it.**
+7. What does the last type parameter T in generic Func delegates like Func<T1, T2, T> represent?  
+**Answer: Represents the type of the return value.**
+8. What is the benefit of a LINQ extension method that ends with OrDefault?  
+**Answer: OrDefault will return the default value for the type it was looking for if the method does not find what it was looking for. Example FirstOrDefault will return the default value for that type if there is no first value. This is useful for avoiding exceptions/runtime errors.**
+9. Why is query comprehension syntax optional?  
+**Answer: Because it is just syntactic sugar. Makes the code easier for humans to read.**
+10. How can you create your own LINQ extension methods?  
+**Answer: Create a static class with a static method, with an IEnumberable parameter prefixed with the ```this``` keyword.**
+
 ## My takeaways / Questions / Notes
 Lambda Expression: is a nameless function.  => (goes to)
