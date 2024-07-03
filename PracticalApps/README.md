@@ -1,10 +1,12 @@
-# Chapter 12 Introducing Web Development Using ASP.NET Core
+# Chapters 12-15 Web Development
 
-## Key Concepts
+## Chapter 12 Introducing Web Development Using ASP.NET Core
+
+### Key Concepts
 * Introduction to some of the app models you can use to build websites and web services using C# and .NET
 * Create class libraries to define an entity data model for working with Northwind database using SQLite
 
-## Know Your Abbreviations
+### Know Your Abbreviations
 | Abbreviation | Stands For | Definition |
 |--------------|------------|-------------|
 | URI | Uniform Resource Identifier | A unique sequence of characters that identifies a resource.
@@ -19,7 +21,7 @@
 | REST | REpresentational State Transfer | An architectural style for distributed hypermedia systems. | 
 
 
-## Practice Questions
+### Practice Questions
 1. What was the name of Microsoft's first dynamic server-side-executed web page technology and why is it still useful to know this history today?  
 **Answer: Active Server Pages (ASP). That's where the ASP in ASP.NET Core comes from. ASP is still used in some some features like Tag Helpers.**
 2. What are the names of two Microsoft web servers?  
@@ -42,4 +44,17 @@
 **Answer: 1. HTML5 - the content and structure of a web page. 2. CSS3 - the styles applied to elements on the web page. 3. JavaScript - code for any business logic needed on the web page.**
 
 
-## My takeaways / Questions / Notes
+## Chapter 13 Building Websites Using ASP.NET Core Razor Pages
+
+### Key Concepts
+
+### Common Build Actions for ASP.NET Core Project Files
+| Build Action | Description |
+|--------------|-------------|
+| AdditionalFiles | Provides inputs to analyzers to verify code quality. |
+| Compile or C# compiler | Passed to the compiler as a source file. |
+| Content | Included as part of the website when its deployed. |
+| Embedded Resource | Passed to the compiler as a resource to be embedded in the assembly. |
+| None | Not part of the build. This value can be used for documentation and other files that should not be deployed with the website. |
+
+
