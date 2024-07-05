@@ -1,11 +1,29 @@
+using Microsoft.AspNetCore.Mvc; // To use [BindProperty], IActionResult 
 using Northwind.EntityModels; // To use NorthwindContext
-using Microsoft.AspNetCore.Mvc.RazorPages; // To use PageModeL
+using Microsoft.AspNetCore.Mvc.RazorPages; // To use PageModel
 
 namespace Northwind.Web.Pages;
 
 public class SuppliersModel : PageModel
 {
     public IEnumerable<Supplier>? Suppliers { get; set; }
+
+    [BindProperty]
+    public Supplier? Supplier { get; set; }
+
+    public IActionResult OnPost()
+    {
+        if (Supplier is not null && ModelState.IsValid)
+        {
+            _db.Suppliers.Add(Supplier);
+            _db.SaveChanges();
+            return RedirectToPage("/suppliers");
+        }
+        else
+        {
+            return Page(); // Redirect to original page
+        }
+    }
 
     public void OnGet()
     {
