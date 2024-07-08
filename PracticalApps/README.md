@@ -57,4 +57,34 @@
 | Embedded Resource | Passed to the compiler as a resource to be embedded in the assembly. |
 | None | Not part of the build. This value can be used for documentation and other files that should not be deployed with the website. |
 
+### Common Methods That Register Dependency Services
+| Method | Service Registered |
+|--------|--------------------|
+| AddMvcCore | Minimum set of services necessary to route requests and invoke controllers. Most websites will need more configuration than this. |
+| AddAuthorization | Authentication and authorization services. |
+| AddDataAnnotations | MVC data annotations service. |
+| AddCacheTagHelper | MVC cache tag helper service. |
+| AddRazorPages| Razor Pages service, including the Razor view engine. Commonly used in simple website projects. It calls the following additional methods: AddMvcCore, AddAuthorization, AddDataAnnotations, AddCacheTagHelper |
+| AddApiExplorer | Web API explorer service. |
+| AddCors | Cross-origin resource sharing (CORS) support for enhanced security. |
+| AddFormatterMappings | Mappings between a URL format its corresponding media type. |
+| AddControllers | Controller services but not services for views or pages. Commonly used in ASP.NET Core Web API projects. It calls the following additional methods: AddMvcCore, AddAuthorization, AddDataAnnotations, AddCacheTagHelper, AddApiExplorer, AddCors, AddFormatterMappings |
+| AddViews | Support for .cshtml views including default conventions. |
+| AddRazorViewEngine | Support for the Razor view engine including processing the @ symbol. |
+| AddControllersWithViews | Controller, view, and page services. Commonly used in ASP.NET Core MVC website projects. It calls the following additional methods: AddMvcCore, AddAuthorization, AddDataAnnotations, AddCacheTagHelper, AddApiExplorer, AddCors, AddFormatterMappings, AddViews, AddRazorViewEngine
+| AddMvc | Similar to AddControllersWithViews, but you should only use it for backward compatibility. 
+| AddDbContext<T<T>> | Your DbContext type and its optional DbContextOptions<TContext<T>>.
+| AddNorthwindContext | A custom extension method we created to make it easier to register the NorthwindContext class for either SQLite or SQL server based on the project referenced. |
+
+### Key Middleware Extension Methods
+| Method | Description |
+|--------|-------------|
+| UseHsts | Adds middleware for using HSTS, which add the Strict-Transport-Security header. |
+| UseHttpsRedirection | Adds middleware for redirecting HTTP requests to HTTPS, so in our code a request for http://localhost:5130 would receive a 307 response telling the browser to request https://localhost:5131. |
+| UseDefaultFiles | Adds middleware that enables default file mapping on the current path, so in our code it would identify files such as index.html or default.html. |
+| UseStaticFiles | Adds middleware that looks in wwwroot for static files to return in the HTTP response. |
+| MapRazorPages | Adds middleware that will map URL paths such as /suppliers to a Razor Page file in the /Pages folder named suppliers.cshtml and return the results as the HTTP response. |
+MapGet | Adds middleware that will map URL paths such as /hello to an inline delegate that writes text directly to the HTTP response. |
+| UseRouting | Adds middleware that defines a point in the pipeline where routing decisions are made and must be combined with a call to UseEndpoints where processing is then executed. |
+| UseEndpoints | Adds middleware to execute to generate responses from decisions made earlier in the pipeline. |
 
