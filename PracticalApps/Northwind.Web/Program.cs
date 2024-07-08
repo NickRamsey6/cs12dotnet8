@@ -52,7 +52,7 @@ app.UseDefaultFiles(); // index.html, default.html and so on
 app.UseStaticFiles();
 
 app.MapRazorPages();
-app.MapGet("/", () => 
+app.MapGet("/hello", () => 
     $"Environment is {app.Environment.EnvironmentName}");
 
 #endregion
