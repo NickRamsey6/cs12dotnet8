@@ -47,6 +47,10 @@
 ## Chapter 13 Building Websites Using ASP.NET Core Razor Pages
 
 ### Key Concepts
+* The foundations of web development using HTTP
+* How to build a simple website that returns static files
+* How to use ASP.NET Core Razor Pages with Entity Framework Core to create web pages that are dynamically generated from information in a database
+* How to configure the HTTP request and response pipeline, what the helper extension methods do and how you can add your own middleware that affects processing
 
 ### Common Build Actions for ASP.NET Core Project Files
 | Build Action | Description |
@@ -88,3 +92,40 @@ MapGet | Adds middleware that will map URL paths such as /hello to an inline del
 | UseRouting | Adds middleware that defines a point in the pipeline where routing decisions are made and must be combined with a call to UseEndpoints where processing is then executed. |
 | UseEndpoints | Adds middleware to execute to generate responses from decisions made earlier in the pipeline. |
 
+### Practice Questions
+1. List six method names that can be specified in an HTTP request.  
+**Answer: GET, HEAD, POST, PUT, DELETE**
+2. List six status codes and their descriptions that can be returned in an HTTP response.  
+**Answer: 200 OK, 201 Created, 301 Moved Permanently, 400 Bad Request, 404 Not Found (missing resource), and 500 Internal Server Error.**
+3. In ASP.NET Core, what is the Program class used for?  
+**Answer: Program class is where you add and configure dependency services like Razor Pages, MVC, and Entity Framework Core data contexts. It is also where you configure middleware in the request and response pipeline. This might include error handling, security options, static files, default files, and endpoint routing.**
+4. What does the acronym HSTS stand for and what does it do?  
+**Answer: HTTP Strict Transport Security. If a website specifies it and the browser support it, then it forces all communication over HTTPS and prevents the visitor from using untrusted or invalid certificates.**
+5. How do you enable static HTML pages for a website?  
+**Answer:**
+```
+app.UseDefaultFiles();
+app.UseStaticFiles();
+```
+6. How do you mix C# code into the middle of HTML to create a dynamic page?  
+**Answer: Create a Razor file with the .cshtml extension and then prefix any C# expressions with the @ symbol, and for C# statements, wrap them in braces or create @functions sections.**
+7. How can you define shared layouts for Razor Pages?  
+**Answer: Create two files: *_Layout.cshtml* to define the markup for the shared layout and *_ViewStart.cshtml* to set the default layout.**
+```
+@{
+    Layout = "_layout";
+}
+```
+8. How can you separate the markup from the code-behind in a Razor Page?  
+**Answer: Create two files: *MyPage.cshtml* containing the markup and *MyPage.cshtml.cs* containing a class that inherits from PageModel.InMyPage.cshtml. Set the model to use the class like this:**
+```
+@page
+@model MyProject.Pages.PageModel
+```
+9. How do you configure an Entity Framework Core data context for use with an ASP.NET Core website?  
+**Answer: Reference the assembly that defines the data context class in your project file. Import the namespaces for Microsoft.EntityFrameworkCore and the data context class in Program.cs or the Startup class. Add a statement that configures the data context with a database connection string for use with a specified database provider in your ConfigureServices method or Program.cs. In the Razor Page model class or @functions section, declare a private filed to store data context and then set it in the constructor.**
+10. How can you reuse Razor Pages with ASP.NET Core 2.2 or later?  
+**Answer: Compile everything related to a Razor Page into a class library.**
+```
+dotnet new razorclasslib -s
+```
