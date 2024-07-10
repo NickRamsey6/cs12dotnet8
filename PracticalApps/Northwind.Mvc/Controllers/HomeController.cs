@@ -1,6 +1,6 @@
-using Microsoft.AspNetCore.Mvc;
-using Northwind.Mvc.Models;
-using System.Diagnostics;
+using Microsoft.AspNetCore.Mvc; // To use Controller, IActionResult
+using Northwind.Mvc.Models; // To use ErrorViewModel
+using System.Diagnostics; // To use Activity
 using Northwind.EntityModels; // To use NorthwindContext
 
 namespace Northwind.Mvc.Controllers

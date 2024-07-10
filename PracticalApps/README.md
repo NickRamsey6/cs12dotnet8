@@ -129,3 +129,69 @@ app.UseStaticFiles();
 ```
 dotnet new razorclasslib -s
 ```
+
+## MVC
+
+### Models, Views and Controllers
+**Models** - Classes that represent the data entities and view models used on the website.  
+**Views** - Razor views (.cshtml files) that render data in view models into HTML web pages. Razor views are not Razor pages. Razor views must NOT have the @Page directive.  
+**Controllers** - Classes that execute code when an HTTP request arrives at the web server. Controller methods usually instantiate a view model and pass that to a view to generate an HTTP response. This is returned to the web browser or other client that made the original request. 
+
+### Builder Object
+Has two commonly used methods: Configuration and Services  
+`Configuration` - contains merged values from aa the places you could set configuration: `appsettings.json`, environment variables, command-line arguments and so on.  
+`Services` - collection of registered dependency services. The call to AddDbContext is an example of registering a dependency service. ASP.NET Core implements the dependency injection (DI) design pattern so that other components like controllers can request needed services through their constructors. 
+
+### The Default MVC Route
+Route - discovers the name of a controller class to instantiate and an action method to execute, with an optional id parameter to pass into the method that will generate an HTTP response.  
+Segments - Curly brackets in a route pattern. Like named parameters of a method. Can be any string and are NOT case sensitive.  
+Route pattern looks at a URL path requested by the browser and matches it to the exact name of a controller, then name of an action, and an optional id value (`?` makes it optional).  
+Default is Home for controller and Index for action.  
+
+### Example URLs and Default Routing
+| URL | Controller | Action | ID |
+|-----|------------|--------|----|
+| / | Home | Index | |
+| /Muppet | Muppet | Index | |
+| /Muppet/Kermit | Muppet | Kermit | |
+| /Muppet/Kermit/Green | Muppet | Kermit | Green |
+| /Products | Products | Index | |
+| /Products/Detail | Products | Detail | |
+| /Products/Detail/3 | Products | Detail | 3 |
+
+### ControllerBase Properties for Working With the Current HTTP Context
+| Property | Description |
+|----------|-------------|
+| `Request` | Just the HTTP request, headers, query string params, body of the request as a stream you can read from, content type and length, and cookies. |
+| `Response` | Just the HTTP response, headers, body of the response as a stream that you can write to, content type and length, status code, and cookies. Also delegates like `OnStarting` and `OnCompleted` that you can hook a method up to. |
+| `HttpContext` | Everything about the current HTTP context including the request and response, connection information, collection of features that have been enabled on the server with middleware, and a `User` object for authentication and authorization. |
+
+### Controller Properties
+| Property | Description |
+|----------|-------------|
+| `ViewData` | A dictionary in which the controller can store key/value pairs that is accessible in a view. The dictionary's lifetime is only for the current request/response. |
+| `ViewBag` | A dynamic object that wraps `ViewData` to provide a friendlier syntax for setting and getting dictionary values. |
+| `TempData` | A dictionary in which the controller can store key/value pairs that is accessible in a view. The dictionary's lifetime is for the current request/response and the next request/response for the same visitor session. Useful for storing a value during an initial request, responding with a redirect, and then reading the stored value in the subsequent request. |
+
+### Controller Methods
+| Method | Description |
+|--------|-------------|
+| `View` | Returns a `ViewResult` after executing a view that renders a full response, for example, a dynamically generated web page. The view can be selected using a convention or be specified with a `string` name. A model can be passed to the view. |
+| `PartialView` | Returns a `PartialViewResult` after executing a view that is part of a full response, for example a dynamically generated chunk of HTML. The view can be selected using a convention or be specified with a string name. A model can be passed to the view. |
+| `ViewComponent` | Returns a `ViewComponentResult` after executing a component that dnamically generates HTML. The component must be selected by specifying its type or its name. An object can be passed as an argument. | 
+| `Json` | Returns a `JsonResult` containing a JSON-serialized object. This can be useful for implementing a simple Web API as part of an MVC controller that primarily returns HMTL for a human to view. |
+
+### Reponsibilities of a Controller
+* Identify the services that the controller needs to be in a valid state and to function properly in their class constructor(s).
+* Use the action name to identify a method to execute. 
+* Extract parameters from the HTTP request. 
+* Use the paranters to fetch any additional data needed to construct a view model and pass it to the appropriate view for the client. 
+* Return the results from the view to the client as an HTTP response with an appropriate status code. 
+
+### Models
+**Models** represent the data required to respond to a request. Two types commonly used are Entity models and View models.  
+**Entity Models** represent entities in a database like SQL Server or SQLite. One or more entities might need to be retireved from data storage. Entity models are defined using classes, since they might need to change and then be used to update the underlying data store.  
+**View Models** aka MVC model. All the data that we want to show in response to a request. The model that is passed into a view for rendering into a response format like HTML or JSON. Should be immuatable so commonly defined using the record type.
+
+### Cache Busting with Tag Helpers
+When `asp-append-version` is specified with a `true` value in a `link`, `img`, or `script` element, the Tag Helper for that tag type is invoked. Tag helpers automatically append a query string value named `v` that is gnerated from a SHA256 hash. If even a single byte within the file with the Tag Helper changes, the hash will be different and a browser that cached the old file will be busted and replaced with the newer version.
