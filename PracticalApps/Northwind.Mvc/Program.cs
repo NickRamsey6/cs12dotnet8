@@ -24,6 +24,13 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddNorthwindContext();
 
+// Add output cache middleware and override the default expiration timespan
+builder.Services.AddOutputCache(options =>
+{
+    options.DefaultExpirationTimeSpan = TimeSpan.FromSeconds(20);
+    options.AddPolicy("views", p => p.SetVaryByQuery("alertstyle"));
+});
+
 var app = builder.Build();
 
 #endregion
@@ -48,11 +55,18 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+// Use output cache
+app.UseOutputCache();
+
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Home}/{action=Index}/{id?}")
+    //.CacheOutput(policyName: "views");
 app.MapRazorPages();
 
+// Create two endpoints that respond with plain text (one not cached, the other cached)
+app.MapGet("/notcached", () => DateTime.Now.ToString());
+app.MapGet("/cached", () => DateTime.Now.ToString()).CacheOutput();
 #endregion
 
 #region Start the host web server listening for HTTP requests
