@@ -178,20 +178,57 @@ Default is Home for controller and Index for action.
 |--------|-------------|
 | `View` | Returns a `ViewResult` after executing a view that renders a full response, for example, a dynamically generated web page. The view can be selected using a convention or be specified with a `string` name. A model can be passed to the view. |
 | `PartialView` | Returns a `PartialViewResult` after executing a view that is part of a full response, for example a dynamically generated chunk of HTML. The view can be selected using a convention or be specified with a string name. A model can be passed to the view. |
-| `ViewComponent` | Returns a `ViewComponentResult` after executing a component that dnamically generates HTML. The component must be selected by specifying its type or its name. An object can be passed as an argument. | 
-| `Json` | Returns a `JsonResult` containing a JSON-serialized object. This can be useful for implementing a simple Web API as part of an MVC controller that primarily returns HMTL for a human to view. |
+| `ViewComponent` | Returns a `ViewComponentResult` after executing a component that dynamically generates HTML. The component must be selected by specifying its type or its name. An object can be passed as an argument. | 
+| `Json` | Returns a `JsonResult` containing a JSON-serialized object. This can be useful for implementing a simple Web API as part of an MVC controller that primarily returns HTML for a human to view. |
 
 ### Reponsibilities of a Controller
 * Identify the services that the controller needs to be in a valid state and to function properly in their class constructor(s).
 * Use the action name to identify a method to execute. 
 * Extract parameters from the HTTP request. 
-* Use the paranters to fetch any additional data needed to construct a view model and pass it to the appropriate view for the client. 
+* Use the parameters to fetch any additional data needed to construct a view model and pass it to the appropriate view for the client. 
 * Return the results from the view to the client as an HTTP response with an appropriate status code. 
 
 ### Models
 **Models** represent the data required to respond to a request. Two types commonly used are Entity models and View models.  
-**Entity Models** represent entities in a database like SQL Server or SQLite. One or more entities might need to be retireved from data storage. Entity models are defined using classes, since they might need to change and then be used to update the underlying data store.  
-**View Models** aka MVC model. All the data that we want to show in response to a request. The model that is passed into a view for rendering into a response format like HTML or JSON. Should be immuatable so commonly defined using the record type.
+**Entity Models** represent entities in a database like SQL Server or SQLite. One or more entities might need to be retrieved from data storage. Entity models are defined using classes, since they might need to change and then be used to update the underlying data store.  
+**View Models** aka MVC model. All the data that we want to show in response to a request. The model that is passed into a view for rendering into a response format like HTML or JSON. Should be immutable so commonly defined using the record type.
 
 ### Cache Busting with Tag Helpers
-When `asp-append-version` is specified with a `true` value in a `link`, `img`, or `script` element, the Tag Helper for that tag type is invoked. Tag helpers automatically append a query string value named `v` that is gnerated from a SHA256 hash. If even a single byte within the file with the Tag Helper changes, the hash will be different and a browser that cached the old file will be busted and replaced with the newer version.
+When `asp-append-version` is specified with a `true` value in a `link`, `img`, or `script` element, the Tag Helper for that tag type is invoked. Tag helpers automatically append a query string value named `v` that is generated from a SHA256 hash. If even a single byte within the file with the Tag Helper changes, the hash will be different and a browser that cached the old file will be busted and replaced with the newer version.
+
+### MVC Chapter Review Questions
+1. What do files with the special names _ViewStart and _ViewImports do when created in the views folder?  
+**Answer: _*ViewStart* contains statements that are executed when the View method is executed, like when a controller action method passes a model to a view to set a default layout.  
+_ViewImports contains @using statements to import namespaces for all views to avoid having to add the same import statements at the top of all views.**
+2. What are the names of the three segments defined in the default ASP.NET Core MVC route, what do they represent, and which are optional?  
+**Answer: {controller} - represents a controller class to instantiate. Optional because it can use the default value: Home. {action} - represents an action method. Optional because it can use the default value: Index. {id} - represents a parameter in the action method. Optional because it is suffixed with ?.**
+3. What does the default model binder do and what data types can it handle?  
+**Answer: Default model binder sets parameters in the action method. Can handle simple types like int, string, DateTime, (nullable types also) complex types and collection types.**
+4. In a shared layout file like _Layout.cshtml, how do you output the content of the current view?  
+**Answer: Call the RenderBody method to output the content of the current view in a shared layout. `@RenderBody()`**
+5. In a shared layout file like _Layout.cshtml, how do you output a section that the current view can supply content for and how does the view supply the contents of that section.  
+**Answer: Call the RenderSection method and specify the name of the section if it is required:
+```@RenderSection("Scripts", required: false)```  
+To define the contents of a section in the view, create a named section:**
+```
+@section Scripts
+{
+    <script>
+        alert('Hello, Mr. Page!');
+    </script>
+}
+```
+6. When calling the View method inside a controller's action method, what paths are searched for the view by convention?  
+**Answer: Thee paths are searched by default:** 
+* /Views/[controller]/[action].cshtml
+* /Views/Shared/[action].cshtml
+* /Pages/Shared/[action].cshtml
+7. How can you instruct the visitor's browser to cache the response for 24 hours?  
+**Answer: Decorate the controller class or action method with the [ResponseCache] attribute, and set the duration to 86400 seconds and the location parameter to ResponseCacheLocation.Client.**
+8. Why might you enable Razor Pages even if you are not creating any yourself?  
+**Answer: ASP.NET Core Identity UI requires Razor Pages.**
+9. How does the ASP.NET Core MVC identify classes tht can act as controllers?  
+**Answer: By looking to see if the class (or the class it derives from) is decorated with the [Controller] attribute.**
+10. In what ways does the ASP.NET Core MVC make it easier to test a website?  
+**Answer: The Model-View-Controller design pattern separates the technical concerns. Makes it easier to write unit tests. ASP.NET Core also makes it easy to implement the Inversion-of-Control (IoC) and dependency injection (DI) design patterns to remove dependencies when testing a component like a controller. Model is the shape of the data. Controller has the executable statements to process the incoming request and outgoing response. View is the generation of the response in a format requested by the user agent like HTML or JSON.**
+ 
