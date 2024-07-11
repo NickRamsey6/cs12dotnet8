@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc; // To use Controller, IActionResult
 using Northwind.Mvc.Models; // To use ErrorViewModel
 using System.Diagnostics; // To use Activity
 using Northwind.EntityModels; // To use NorthwindContext
+using Microsoft.EntityFrameworkCore; // To use Include method
 
 namespace Northwind.Mvc.Controllers
 {
@@ -41,6 +42,25 @@ namespace Northwind.Mvc.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+        public IActionResult ProductDetail(int? id)
+        {
+            if (!id.HasValue)
+            {
+                return BadRequest("You must pass a product ID in the route, for example, /Home/ProductDetail/21");
+            }
+
+            Product? model = _db.Products.Include(p => p.Category)
+                .SingleOrDefault(p => p.ProductId == id);
+
+            if (model is null)
+            {
+                // NotFound method allows a custom message for 404 status codes
+                return NotFound($"ProductId {id} not found.");
+            }
+
+            return View(model); // Pass model to view and then return result
         }
     }
 }
