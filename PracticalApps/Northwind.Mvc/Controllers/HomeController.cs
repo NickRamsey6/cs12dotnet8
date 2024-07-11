@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Mvc; // To use Controller, IActionResult
 using Northwind.Mvc.Models; // To use ErrorViewModel
 using System.Diagnostics; // To use Activity
 using Northwind.EntityModels; // To use NorthwindContext
-using Microsoft.EntityFrameworkCore; // To use Include method
+using Microsoft.EntityFrameworkCore; // To use Include method and ToListAsync extension method
 
 namespace Northwind.Mvc.Controllers
 {
@@ -19,7 +19,7 @@ namespace Northwind.Mvc.Controllers
 
         [ResponseCache(Duration = 10 /* seconds */,
             Location = ResponseCacheLocation.Any)]
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
             _logger.LogError("This is a serious error (not really!)");
             _logger.LogWarning("This is your first warning!");
@@ -28,8 +28,8 @@ namespace Northwind.Mvc.Controllers
 
             HomeIndexViewModel model = new(
                 VisitorCount: Random.Shared.Next(1, 1001),
-                Categories: _db.Categories.ToList(),
-                Products: _db.Products.ToList()
+                Categories: await _db.Categories.ToListAsync(),
+                Products: await _db.Products.ToListAsync()
             );
 
             return View(model); // Pass the model to the view
@@ -47,7 +47,7 @@ namespace Northwind.Mvc.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
-        public IActionResult ProductDetail(int? id, string alertstyle = "success")
+        public async Task<IActionResult> ProductDetail(int? id, string alertstyle = "success")
         {
             ViewData["alertstyle"] = alertstyle;
             if (!id.HasValue)
@@ -55,8 +55,8 @@ namespace Northwind.Mvc.Controllers
                 return BadRequest("You must pass a product ID in the route, for example, /Home/ProductDetail/21");
             }
 
-            Product? model = _db.Products.Include(p => p.Category)
-                .SingleOrDefault(p => p.ProductId == id);
+            Product? model = await _db.Products.Include(p => p.Category)
+                .SingleOrDefaultAsync(p => p.ProductId == id);
 
             if (model is null)
             {
