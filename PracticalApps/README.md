@@ -181,7 +181,7 @@ Default is Home for controller and Index for action.
 | `ViewComponent` | Returns a `ViewComponentResult` after executing a component that dynamically generates HTML. The component must be selected by specifying its type or its name. An object can be passed as an argument. | 
 | `Json` | Returns a `JsonResult` containing a JSON-serialized object. This can be useful for implementing a simple Web API as part of an MVC controller that primarily returns HTML for a human to view. |
 
-### Reponsibilities of a Controller
+### Responsibilities of a Controller
 * Identify the services that the controller needs to be in a valid state and to function properly in their class constructor(s).
 * Use the action name to identify a method to execute. 
 * Extract parameters from the HTTP request. 
