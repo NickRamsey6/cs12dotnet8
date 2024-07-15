@@ -256,5 +256,12 @@ To define the contents of a section in the view, create a named section:**
  | 500 Server Error | The request was valid, but something went wrong on the server side while processing the request. Retrying again later might work. |
  | 503 Service Unavailable | The web service is busy and cannot handle the request. Trying again later might work. |
 
- 
+ ### Common HTTP Status Code Responses to Other Methods Like POST and PUT
+ | Status Code | Description |
+ |-------------|-------------|
+ | 201 Created | The new resource was created successfully, the response header named Location contains its path, and the response body contains the newly created resource. Immediately GET-ing the resource should return 200. |
+ | 202 Accepted | The new resource cannot be created immediately so the request is queued for later processing and immediately GET-ing the resource might return 404. The body can contain a resource that points to some form of status checker or an estimate of when the resource will be available. |
+ | 204 No Content | Commonly used in response to a DELETE request since returning the resource in the body after deleting it does not usually make sense! Sometimes used in response to POST, PUT, or PATCH requests if the client does not need to confirm that the request was processed correctly. |
+ | 405 Method Not Allowed | Returned when the request used a method that is not supported. For example, a web service designed to be read-only may explicitly disallow PUT, DELETE and so on. |
+ | 415 Unsupported Media Type | Returned when the resource in the request body uses a media type that the web service cannot handle. For example, if the body contains a resource in XML format but the web service can only process JSON. |
 
