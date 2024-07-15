@@ -3,8 +3,15 @@ using Northwind.EntityModels; // To use AddNorthwindContext method
 using Microsoft.Extensions.Caching.Memory; // To use IMemoryCache and so on
 using Northwind.WebApi.Repositories; // To use ICustomerRepository
 using Swashbuckle.AspNetCore.SwaggerUI; // To use SubmitMethod
+using Microsoft.AspNetCore.HttpLogging; // To use HttpLoggingFields
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddHttpLogging(options =>
+{
+    options.LoggingFields = HttpLoggingFields.All;
+    options.RequestBodyLogLimit = 4096; // Default is 32k
+    options.ResponseBodyLogLimit = 4096; // Default is 32k
+});
 
 // Add services to the container.
 
@@ -45,6 +52,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
 
 var app = builder.Build();
+app.UseHttpLogging();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
