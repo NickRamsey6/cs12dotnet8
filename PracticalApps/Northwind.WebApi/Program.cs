@@ -1,14 +1,21 @@
 using Microsoft.AspNetCore.Mvc.Formatters; // To use IOutputFormatter
 using Northwind.EntityModels; // To use AddNorthwindContext method
+using Microsoft.Extensions.Caching.Memory; // To use IMemoryCache and so on
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+//Register an implementation for the in-memory cache as a singleton instance that is constructed immediately
+builder.Services.AddSingleton<IMemoryCache>(
+    new MemoryCache(new MemoryCacheOptions()));
+
+// Register the Northwind database context class
 builder.Services.AddNorthwindContext();
 
 builder.Services.AddControllers(options =>
 {
+    // Writing the names and supported media types of the default output formatters to the console
     WriteLine("Default output formatters:");
     foreach (IOutputFormatter formatter in options.OutputFormatters)
     {
