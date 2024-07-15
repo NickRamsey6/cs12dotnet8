@@ -232,3 +232,29 @@ To define the contents of a section in the view, create a named section:**
 10. In what ways does the ASP.NET Core MVC make it easier to test a website?  
 **Answer: The Model-View-Controller design pattern separates the technical concerns. Makes it easier to write unit tests. ASP.NET Core also makes it easy to implement the Inversion-of-Control (IoC) and dependency injection (DI) design patterns to remove dependencies when testing a component like a controller. Model is the shape of the data. Controller has the executable statements to process the incoming request and outgoing response. View is the generation of the response in a format requested by the user agent like HTML or JSON.**
  
+
+ ## Chapter 14
+
+ ### Key Concepts 
+
+ ### Common HTTP Status Code Responses to the GET Method
+ | Status Code | Description |
+ |-------------|-------------|
+ | 101 Switching Protocols | The requester has asked the server to switch protocols and the server has agreed to do so. For example, it is common to switch from HTTP to **WebSockets (WS)** for more efficient communication. |
+ | 103 Early Hints | Used to convey hints that help a client make preparations to process the final response. For example, the server might send the following response before then sending a normal 200 OK response for a web page that uses a stylesheet and JavaScript file. |
+ | 200 OK | The path was correctly formed, the resource was successfully found, serialized into an acceptable media type, and then returned in the response body. The response headers specify the Content-Type, Content-Length, and Content-Encoding. For example, GZIP. |
+ | 301 Moved Permanently | Over time, a web service may change its resource model, including the path used to identify an existing resource. The web service can indicate the new path by returning this status code and a response named Location that has the new path. |
+ | 302 Found | Like 301. |
+ | 304 Not Modified | If the request includes the If-Modified-Since header, then the web service can respond with the status code. The response body is empty because the client should use its cached copy of the resource. |
+ | 307 Temporary Redirect | The requested resource has been temporarily moved to the URL in the Location header. The browser should make a new request using the URL. For example, this is what happens if you enable UseHttpsRedirection and a client makes an HTTP request. |
+ | 400 Bad Request | The request was invalid, for example, it used a path for a product using an integer ID where the ID value is missing. |
+ | 401 Unauthorized | The request was valid and the resource was found, but the client did not supply credentials or is not authorized to access that resource. Re-authenticating may enable access, for example, by adding or changing the Authorization request header. |
+ | 403 Forbidden | The request was valid and the resource was found, but the client is not authorized to access that resource. Re-authenticating will not fix the issue. |
+ | 404 Not Found | The request was valid, but the resource was not found. The resource may be found if the request is repeated later. To indicate that a resource will never be found, return 410 Gone. |
+ | 406 Not Acceptable | If the request has an Accept header that only lists media types that the web service does not support. For example, if the client requests JSON but the web service can only return XML. |
+ | 451 Unavailable for Legal Reasons | A website hosted in the USA might return this for requests coming from Europe to avoid having to comply with the General Data Protection Regulation (GDPR). The number was chosen as a reference to the novel Fahrenheit 451, in which books are banned and burned. |
+ | 500 Server Error | The request was valid, but something went wrong on the server side while processing the request. Retrying again later might work. |
+ | 503 Service Unavailable | The web service is busy and cannot handle the request. Trying again later might work. |
+
+ 
+
