@@ -265,3 +265,27 @@ To define the contents of a section in the view, create a named section:**
  | 405 Method Not Allowed | Returned when the request used a method that is not supported. For example, a web service designed to be read-only may explicitly disallow PUT, DELETE and so on. |
  | 415 Unsupported Media Type | Returned when the resource in the request body uses a media type that the web service cannot handle. For example, if the body contains a resource in XML format but the web service can only process JSON. |
 
+ ### Route Constraints
+ | Constraint | Example | Description |
+ |------------|---------|-------------|
+ | required | {id:required} | The parameter has been provided. |
+ | int and long | {id:int} | Any integer of the correct size. |
+ | decimal, double, and float | {unitprice:decimal} | Any real number of the correct size. |
+ | bool | {discontinued:bool} | Case-insensitive match on true or false. |
+ | datetime | {hired:datetime} | An invariant culture date/time. |
+ | guid | {id:guid} | A GUID value. |
+ | minlength(n), maxlength(n), length(n) and length(n, m) | {title:minlength(5)}, {title:length(5, 25)} | The text must have the defined minimum and/or maximum length. |
+ | min(n), max(n), and range(n, m) | {age:range(18, 65)} | The integer must be within the defined minimum or maximum range. |
+ | alpha regex | {firstname:alpha}, {id:regex(^[A-Z]{{5}}$)} | The parameter must match one or more alphabetic characters or the regular expression. |
+
+ ### ControllerBase Helper Methods That Return a Response
+ | Method | Description |
+ |--------|-------------|
+ | Ok | Returns a 200 status code and a resource converted into the client's preferred format, like JSON or XML. Commonly used in response to a GET request. |
+ | CreatedAtRoute | Returns a 201 status code and the path to the new resource. Commonly used in response to a POST request to create a resource that can be created quickly. |
+| Accepted | Returns a 202 status code to indicate the request is being processed but has not been completed. Commonly used in response to a POST, PUT, PATCH, or DELETE request that triggers a background process that takes a long time to complete. |
+| NoContentResult | Returns a 204 status code and an empty response body. Commonly used in response to a PUT, PATCH or DELETE request when the response does not need to contain the affected resource. |
+| BadRequest | Returns a 400 status code and an optional message string with more details. |
+| NotFound | Returns an e status code and automatically populates the ProblemDetails body (requires a compatibility version of 2.2 or later.) |
+
+
