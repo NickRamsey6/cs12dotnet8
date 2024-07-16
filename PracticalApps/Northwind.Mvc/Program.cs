@@ -40,6 +40,12 @@ builder.Services.AddHttpClient(name: "Northwind.WebApi", configureClient: option
             mediaType: "application/json", quality: 1.0));
 });
 
+// DOES NOT WORK
+//builder.Services.AddHealthChecks()
+//  .AddCheck()
+//  // Execute SELECT 1 using the specified connection string.
+//  .AddSqlServer("Data Source=.;Initial Catalog=Northwind;Integrated Security=true;TrustServerCertificate=true;");
+
 var app = builder.Build();
 
 #endregion
@@ -66,6 +72,9 @@ app.UseAuthorization();
 
 // Use output cache
 app.UseOutputCache();
+
+// DOES NOT WORK
+//app.UseHealthChecks(path: "/howdoyoufell");
 
 app.MapControllerRoute(
     name: "default",
