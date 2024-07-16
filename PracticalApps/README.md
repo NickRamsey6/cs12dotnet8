@@ -235,7 +235,11 @@ To define the contents of a section in the view, create a named section:**
 
  ## Chapter 14
 
- ### Key Concepts 
+ ### Key Concepts
+ * How to build an ASP.NET Core Web API service that can be called by any app on any platform that can make an HTTP request and process an HTTP response.
+ * How to test and document web service APIs with Swagger.
+ * How to consume services efficiently. 
+ * How to build a basic HTTP API service using Minimal APIs. 
 
  ### Common HTTP Status Code Responses to the GET Method
  | Status Code | Description |
@@ -288,4 +292,24 @@ To define the contents of a section in the view, create a named section:**
 | BadRequest | Returns a 400 status code and an optional message string with more details. |
 | NotFound | Returns an e status code and automatically populates the ProblemDetails body (requires a compatibility version of 2.2 or later.) |
 
-
+### Chapter 14 Review Questions
+1. Which class should you inherit from to create a controller class for an ASP.NET Core Web API service?  
+**Answer: ControllerBase**
+2. When configuring an HTTP client, how do you specify the format of data that ou prefer in the response from the web service?  
+**Answer: By adding an Accept header to the HTTP request that specifies the document format you prefer.**
+3. What must you do to specify which controller action method will be executed in response to an HTTP request?  
+**Answer: Decorate the action method with an attribute like [HttpGet].**
+4. What must you do to specify what responses should be expected when calling an action method?  
+**Answer: Decorate the action method with [ProducesResponseType()].**
+5. List three methods that can be called to return responses with different status codes.  
+**Answer: OK - returns 200 status code and the object passed to this method in the body. NotFound - returns 404 status code and an optional error message. BadRequest - returns 400 status code and an optional error message.**
+6. List four ways you can test a web service.  
+**Answer: Swagger testing interface, Postman, the browser for simple HTTP GET requests, and VS code REST client extension.**
+7. Why should you not wrap your use of HttpClient in a using statement to dispose of it when you are finished even though it implements the IDisposable interface, and what should you use instead?  
+**Answer: Should use HttpClientFactory instead. HttpClient is shared, reentrant and partially thread safe so it's tricky to use correctly.**
+8. What are the benefits of HTTP/2 and HTTP/3 compared to HTTP/1.1?  
+**Answer: HTTP/2 benefits from full multiplexing, which reduces latency, supports request prioritization and minimizes overhead in the protocol using header compression. HTTP/3 benefits from being based on UDP rather than TCP so that any packet loss does not block all streams. HTTP/3 also has 0-RTT support meaning subsequent connections do not repeat the TLS acknowledgement so the client can start requesting data faster.**
+9. How can you enable clients to detect if your web service is healthy with ASP.NET Core 2.2 and later?  
+**Answer: You can install health check APIs including database health checks for Entity Framework Core data contexts. Health checks can be extended to report detailed information back to the client.**
+10. What benefits does endpoint routing provide?  
+**Answer: Improved performance of routing and action method selection, and a link generation service.**
